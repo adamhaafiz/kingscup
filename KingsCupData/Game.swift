@@ -10,6 +10,10 @@ public struct Game {
         self.cards = cards
     }
 
+    public init() {
+        self.init(cards: [])
+    }
+
     mutating func build() {
         var newCards: [Card] = []
 
@@ -20,5 +24,11 @@ public struct Game {
         }
 
         cards = newCards.shuffled()
+    }
+
+    public func numberOfKings() -> Int {
+        return cards.reduce(0) { (result: Int, card: Card) -> Int in
+            card.rank == "K" ? result + 1 : result
+        }
     }
 }
