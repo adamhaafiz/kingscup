@@ -5,6 +5,7 @@
 
 public struct Game {
     public var cards: [Card]
+    public var gameOverClosure: ((Game) -> Void)?
 
     public init() {
         cards = []
@@ -25,12 +26,19 @@ public struct Game {
     mutating func remove(card: Card) {
         if let index = cards.firstIndex(where: { $0 == card }) {
             cards.remove(at: index)
+            checkWinningCondition()
         }
     }
 
     public func numberOfKings() -> Int {
         return cards.reduce(0) { (result: Int, card: Card) -> Int in
             card.rank == "K" ? result + 1 : result
+        }
+    }
+
+    private func checkWinningCondition() {
+        if numberOfKings() == 0 {
+            gameOverClosure?(self)
         }
     }
 }

@@ -42,4 +42,20 @@ class GameTests: XCTestCase {
 
         XCTAssert(sut.numberOfKings() == countBeforeRemoval - 1)
     }
+
+    func testGame_whenThereAreNoKings_winningConditionShouldTrigger() {
+        let expectation = self.expectation(description: "Winning condition should trigger")
+
+        sut.gameOverClosure = { game in
+            XCTAssert(game.numberOfKings() == 0)
+            expectation.fulfill()
+        }
+
+        while sut.numberOfKings() > 0 {
+            let kingCard = sut.cards.first { $0.rank == "K" }!
+            sut.remove(card: kingCard)
+        }
+
+        waitForExpectations(timeout: 1.0)
+    }
 }
