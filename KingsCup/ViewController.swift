@@ -10,11 +10,7 @@ import UIKit
 import KingsCupData
 
 class ViewController: UIViewController {
-    @IBOutlet weak var cardCollectionView: UICollectionView! {
-        didSet {
-            cardCollectionView.backgroundColor = .red
-        }
-    }
+    @IBOutlet weak var cardCollectionView: UICollectionView!
 
     var game: Game!
 
@@ -29,7 +25,6 @@ class ViewController: UIViewController {
             debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
         }
 
-        cardCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cardCellIdentifier)
         cardCollectionView.collectionViewLayout = CardFlowLayout()
     }
 }
@@ -39,9 +34,12 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         return game.cards.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cardCellIdentifier, for: indexPath)
-        cell.backgroundColor = game.cards[indexPath.item].rank == "K" ? .green : .blue
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: CardCell = collectionView.dequeueReusableCell(withReuseIdentifier: cardCellIdentifier,
+                for: indexPath) as! CardCell
+
+        cell.debugLabel.text = "\(game.cards[indexPath.item].rank) \(game.cards[indexPath.item].suitType.rawValue)"
 
         return cell
     }
@@ -65,7 +63,7 @@ class CardFlowLayout: UICollectionViewFlowLayout {
         scrollDirection = .horizontal
 
         let screenHeight = UIScreen.main.bounds.height
-        let cellHeight = screenHeight / 2.5
+        let cellHeight = screenHeight / 4
         let cellWidth = cellHeight * (10.0 / 16.0)
 
         self.itemSize = CGSize(width: cellWidth, height: cellHeight)
