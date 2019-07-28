@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
+		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
+		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
 		15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A522EDE869002EAC7D /* AppDelegate.swift */; };
 		15D182A822EDE869002EAC7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A722EDE869002EAC7D /* ViewController.swift */; };
 		15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D182A922EDE869002EAC7D /* Main.storyboard */; };
@@ -14,7 +17,7 @@
 		15D182B022EDE869002EAC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D182AE22EDE869002EAC7D /* LaunchScreen.storyboard */; };
 		15D182BB22EDE869002EAC7D /* KingsCupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182BA22EDE869002EAC7D /* KingsCupUITests.swift */; };
 		15D182D322EDE894002EAC7D /* KingsCupData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; };
-		15D182DA22EDE894002EAC7D /* KingsCupDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182D922EDE894002EAC7D /* KingsCupDataTests.swift */; };
+		15D182DA22EDE894002EAC7D /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182D922EDE894002EAC7D /* GameTests.swift */; };
 		15D182DC22EDE894002EAC7D /* KingsCupData.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D182CC22EDE894002EAC7D /* KingsCupData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15D182DF22EDE894002EAC7D /* KingsCupData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; };
 		15D182E022EDE894002EAC7D /* KingsCupData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -66,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13E501CA72D68584E38EB23C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		15D182A222EDE869002EAC7D /* KingsCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingsCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182A522EDE869002EAC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D182A722EDE869002EAC7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +86,7 @@
 		15D182CC22EDE894002EAC7D /* KingsCupData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KingsCupData.h; sourceTree = "<group>"; };
 		15D182CD22EDE894002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D182D222EDE894002EAC7D /* KingsCupDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsCupDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15D182D922EDE894002EAC7D /* KingsCupDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsCupDataTests.swift; sourceTree = "<group>"; };
+		15D182D922EDE894002EAC7D /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		15D182DB22EDE894002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +173,8 @@
 			children = (
 				15D182CC22EDE894002EAC7D /* KingsCupData.h */,
 				15D182CD22EDE894002EAC7D /* Info.plist */,
+				13E50A89DFD151D8C3CCC7F9 /* Card.swift */,
+				13E501CA72D68584E38EB23C /* Game.swift */,
 			);
 			path = KingsCupData;
 			sourceTree = "<group>";
@@ -174,8 +182,9 @@
 		15D182D822EDE894002EAC7D /* KingsCupDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				15D182D922EDE894002EAC7D /* KingsCupDataTests.swift */,
+				15D182D922EDE894002EAC7D /* GameTests.swift */,
 				15D182DB22EDE894002EAC7D /* Info.plist */,
+				13E50DB06ED20C3A6F80329F /* CardTests.swift */,
 			);
 			path = KingsCupDataTests;
 			sourceTree = "<group>";
@@ -290,7 +299,6 @@
 					};
 					15D182D122EDE894002EAC7D = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 15D182A122EDE869002EAC7D;
 					};
 				};
 			};
@@ -371,6 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */,
+				13E500E8E08F25344437E4DB /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +388,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D182DA22EDE894002EAC7D /* KingsCupDataTests.swift in Sources */,
+				15D182DA22EDE894002EAC7D /* GameTests.swift in Sources */,
+				13E5090A3DF475AB46403541 /* CardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +702,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingsCup.app/KingsCup";
 			};
 			name = Debug;
 		};
@@ -711,7 +721,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingsCup.app/KingsCup";
 			};
 			name = Release;
 		};
