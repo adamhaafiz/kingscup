@@ -20,4 +20,10 @@ class GameTests: XCTestCase {
         XCTAssert(sut.cards.count == 1)
     }
 
+    func testGame_build_shouldInitFullDeck() {
+        var sut = Game(cards: [])
+        sut.build()
+
+        XCTAssert(sut.cards.count == 52)
+    }
 }

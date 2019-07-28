@@ -4,11 +4,21 @@
 //
 
 public struct Game {
-    public let cards: [Card]
+    public var cards: [Card]
 
     public init(cards: [Card]) {
         self.cards = cards
     }
 
-    mutating func shuffle() {}
+    mutating func build() {
+        var newCards: [Card] = []
+
+        SuitType.allCases.forEach { suit in
+            ActionType.allCases.forEach { action in
+                newCards.append(Card(suitType: suit, rank: action.rawValue, header: "foo", body: "bar"))
+            }
+        }
+
+        cards = newCards.shuffled()
+    }
 }
