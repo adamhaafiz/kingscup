@@ -3,7 +3,7 @@
 // Copyright (c) 2019 Adam Haafiz. All rights reserved.
 //
 
-public enum SuitType: CaseIterable {
+public enum SuitType: String, CaseIterable {
     case clubs, diamonds, hearts, spades
 }
 

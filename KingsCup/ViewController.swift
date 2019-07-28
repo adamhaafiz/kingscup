@@ -25,6 +25,9 @@ class ViewController: UIViewController {
 
         game = Game()
         game.build()
+        game.gameOverClosure = { game in
+            debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
+        }
 
         cardCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cardCellIdentifier)
         cardCollectionView.collectionViewLayout = CardFlowLayout()
@@ -38,9 +41,20 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cardCellIdentifier, for: indexPath)
-        cell.backgroundColor = .green
+        cell.backgroundColor = game.cards[indexPath.item].rank == "K" ? .green : .blue
 
         return cell
+    }
+
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let card = game.cards[indexPath.item]
+        let alert = UIAlertController(title: card.rank, message: card.suitType.rawValue, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+
+        present(alert, animated: true) { [weak self, weak collectionView] in
+            self?.game.remove(card: card)
+            collectionView?.reloadData()
+        }
     }
 }
 
