@@ -6,12 +6,8 @@
 public struct Game {
     public var cards: [Card]
 
-    public init(cards: [Card]) {
-        self.cards = cards
-    }
-
     public init() {
-        self.init(cards: [])
+        cards = []
     }
 
     mutating func build() {
@@ -24,6 +20,12 @@ public struct Game {
         }
 
         cards = newCards.shuffled()
+    }
+
+    mutating func remove(card: Card) {
+        if let index = cards.firstIndex(where: { $0 == card }) {
+            cards.remove(at: index)
+        }
     }
 
     public func numberOfKings() -> Int {

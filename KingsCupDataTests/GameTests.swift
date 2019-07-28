@@ -10,27 +10,36 @@ import XCTest
 @testable import KingsCupData
 
 class GameTests: XCTestCase {
-    func createMockCard() -> Card {
-        return Card(suitType: .clubs, rank: "1", header: "foo", body: "bar")
-    }
+    var sut: Game = Game()
 
-    func testGame_shouldInit() {
-        let sut = Game(cards: [createMockCard()])
-
-        XCTAssert(sut.cards.count == 1)
+    override func setUp() {
+        super.setUp()
+        sut.build()
     }
 
     func testGame_build_shouldInitFullDeck() {
-        var sut = Game()
-        sut.build()
-
         XCTAssert(sut.cards.count == 52)
     }
 
-    func testGame_givenNewDeckOfCards_shouldReturnFourKings() {
-        var sut = Game()
-        sut.build()
-
+    func testGame_build_shouldInitDeckWithFourKings() {
         XCTAssert(sut.numberOfKings() == 4)
+    }
+
+    func testGame_remove_shouldReduceCardCount() {
+        let nonKingCard = sut.cards.first { $0.rank != "K" }!
+
+        let countBeforeRemoval = sut.cards.count
+        sut.remove(card: nonKingCard)
+
+        XCTAssert(sut.cards.count == countBeforeRemoval - 1)
+    }
+
+    func testGame_kingRemoval_shouldReduceKingCount() {
+        let kingCard = sut.cards.first { $0.rank == "K" }!
+
+        let countBeforeRemoval = sut.numberOfKings()
+        sut.remove(card: kingCard)
+
+        XCTAssert(sut.numberOfKings() == countBeforeRemoval - 1)
     }
 }

@@ -23,7 +23,7 @@ public enum ActionType: String, CaseIterable {
          king = "K"
 }
 
-public struct Card {
+public struct Card: Equatable {
     public let suitType: SuitType
     public let rank: String
     public let header: String
