@@ -11,7 +11,7 @@ public struct Game {
         cards = []
     }
 
-    mutating func build() {
+    mutating public func build() {
         var newCards: [Card] = []
 
         SuitType.allCases.forEach { suit in
@@ -23,7 +23,7 @@ public struct Game {
         cards = newCards.shuffled()
     }
 
-    mutating func remove(card: Card) {
+    mutating public func remove(card: Card) {
         if let index = cards.firstIndex(where: { $0 == card }) {
             cards.remove(at: index)
             checkWinningCondition()
