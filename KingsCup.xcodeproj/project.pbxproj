@@ -21,6 +21,7 @@
 		15D182DC22EDE894002EAC7D /* KingsCupData.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D182CC22EDE894002EAC7D /* KingsCupData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15D182DF22EDE894002EAC7D /* KingsCupData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; };
 		15D182E022EDE894002EAC7D /* KingsCupData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15F76F9022EE3AAA00C92754 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76F8F22EE3AAA00C92754 /* CardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		15D182D222EDE894002EAC7D /* KingsCupDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsCupDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182D922EDE894002EAC7D /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		15D182DB22EDE894002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F76F8F22EE3AAA00C92754 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				15D182AC22EDE869002EAC7D /* Assets.xcassets */,
 				15D182AE22EDE869002EAC7D /* LaunchScreen.storyboard */,
 				15D182B122EDE869002EAC7D /* Info.plist */,
+				15F76F8F22EE3AAA00C92754 /* CardCell.swift */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				15D182A822EDE869002EAC7D /* ViewController.swift in Sources */,
 				15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */,
+				15F76F9022EE3AAA00C92754 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
