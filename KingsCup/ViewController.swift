@@ -47,12 +47,12 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let card = game.cards[indexPath.item]
         let alert = UIAlertController(title: card.rank, message: card.suitType.rawValue, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-
-        present(alert, animated: true) { [weak self, weak collectionView] in
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] _ in
             self?.game.remove(card: card)
-            collectionView?.reloadData()
-        }
+            collectionView.reloadData()
+        })
+
+        present(alert, animated: true)
     }
 }
 
