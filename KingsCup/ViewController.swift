@@ -74,7 +74,7 @@ class CardFlowLayout: UICollectionViewFlowLayout {
         let cellWidth = cellHeight * (10.0 / 16.0)
 
         self.itemSize = CGSize(width: cellWidth, height: cellHeight)
-        self.sectionInset = UIEdgeInsets(top: 0.0, left: self.minimumInteritemSpacing, bottom: 0.0, right: 0.0)
+        self.sectionInset = UIEdgeInsets(top: 0.0, left: self.minimumInteritemSpacing, bottom: 0.0, right: self.minimumInteritemSpacing)
     }
 }
 
