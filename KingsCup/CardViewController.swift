@@ -10,5 +10,29 @@ import UIKit
 import KingsCupData
 
 class CardViewController: UIViewController {
-    var card: Card?
+    @IBOutlet var suitLabels: [UILabel]!
+    @IBOutlet var suitImageViews: [UIImageView]!
+    @IBOutlet weak var actionTypeTitleLabel: UILabel!
+    @IBOutlet weak var actionTypeBodyLabel: UILabel!
+    @IBOutlet weak var tintedSuitImageView: UIImageView!
+
+    var card: Card? {
+        didSet {
+            suitLabels.forEach { $0.text = card?.rank }
+            suitImageViews.forEach { $0.image = UIImage(named: card?.suitType.rawValue ?? "spades" )  }
+            actionTypeTitleLabel.text = card?.actionType.title
+            actionTypeBodyLabel.text = card?.actionType.body
+
+            tintedSuitImageView.setImageColor(color: UIColor(named: "PrimaryColor") ?? .black)
+        }
+    }
+}
+
+// https://stackoverflow.com/a/36591030/1952466
+extension UIImageView {
+    func setImageColor(color: UIColor) {
+        let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
+        self.image = templateImage
+        self.tintColor = color
+    }
 }

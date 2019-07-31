@@ -16,7 +16,7 @@ public struct Game {
 
         SuitType.allCases.forEach { suit in
             ActionType.allCases.forEach { action in
-                newCards.append(Card(suitType: suit, rank: action.rawValue, header: "foo", body: "bar"))
+                newCards.append(Card(suitType: suit, rank: action.rawValue, actionType: action))
             }
         }
 

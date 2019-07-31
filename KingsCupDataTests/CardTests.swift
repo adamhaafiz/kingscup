@@ -11,12 +11,11 @@ import XCTest
 
 class CardTests: XCTestCase {
     func testCard_shouldInit() {
-        let sut = Card(suitType: .hearts, rank: "1", header: "foo", body: "bar")
+        let sut = Card(suitType: .hearts, rank: "1", actionType: .king)
 
         XCTAssert(sut.suitType == .hearts)
         XCTAssert(sut.rank == "1")
-        XCTAssert(sut.header == "foo")
-        XCTAssert(sut.body == "bar")
+        XCTAssert(sut.actionType == .king)
     }
 
 }

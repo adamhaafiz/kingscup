@@ -58,6 +58,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             return
         }
 
+        _ = cardViewController.view
+
         cardViewController.card = game.cards[indexPath.item]
         present(cardViewController, animated: true)
     }
