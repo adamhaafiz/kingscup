@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var crownsStackView: UIStackView!
     
     var game: Game!
+    var animationUpdate: (() -> Void)?
 
     let cardCellIdentifier = "CardCell"
 
@@ -29,19 +30,34 @@ class ViewController: UIViewController {
         game.kingsNumberChangedClosure = { [weak self] kingsLeft in
             let crownImageView = self?.crownsStackView.arrangedSubviews[kingsLeft] as? UIImageView
             crownImageView?.alpha = 0
+
+            self?.cupImageView.image = UIImage(named: "cup_volume_\(kingsLeft)")
         }
 
         cardCollectionView.collectionViewLayout = CardFlowLayout()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if let animationUpdate = animationUpdate {
+            animationUpdate()
+            self.animationUpdate = nil
+        }
+    }
+
     @IBAction func unwindToHomeScreen(_ unwindSegue: UIStoryboardSegue) {
-        guard let cardViewController = unwindSegue.source as? CardViewController, let card = cardViewController.card else {
+        guard let cardViewController = unwindSegue.source as? CardViewController, let cardToBeRemoved = cardViewController.card else {
             return
         }
 
-        game.remove(card: card)
-        cupImageView.image = UIImage(named: "cup_volume_\(game.numberOfKings())")
-        cardCollectionView.reloadData()
+        animationUpdate = { [weak self] in
+            let index = self?.game.cards.firstIndex(of: cardToBeRemoved)!
+            self?.game.remove(card: cardToBeRemoved)
+            self?.cardCollectionView.performBatchUpdates({
+                self?.cardCollectionView.deleteItems(at: [IndexPath(item: index!, section: 0)])
+            }, completion: nil)
+        }
     }
 }
 
