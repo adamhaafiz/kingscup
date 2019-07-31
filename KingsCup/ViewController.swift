@@ -11,7 +11,9 @@ import KingsCupData
 
 class ViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView!
-
+    @IBOutlet weak var cupImageView: UIImageView!
+    @IBOutlet weak var crownsStackView: UIStackView!
+    
     var game: Game!
 
     let cardCellIdentifier = "CardCell"
@@ -24,6 +26,10 @@ class ViewController: UIViewController {
         game.gameOverClosure = { game in
             debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
         }
+        game.kingsNumberChangedClosure = { [weak self] kingsLeft in
+            let crownImageView = self?.crownsStackView.arrangedSubviews[kingsLeft] as? UIImageView
+            crownImageView?.alpha = 0
+        }
 
         cardCollectionView.collectionViewLayout = CardFlowLayout()
     }
@@ -34,6 +40,7 @@ class ViewController: UIViewController {
         }
 
         game.remove(card: card)
+        cupImageView.image = UIImage(named: "cup_volume_\(game.numberOfKings())")
         cardCollectionView.reloadData()
     }
 }
