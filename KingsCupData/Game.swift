@@ -6,6 +6,7 @@
 public struct Game {
     public var cards: [Card]
     public var gameOverClosure: ((Game) -> Void)?
+    public var kingsNumberChangedClosure: ((Int) -> Void)?
 
     public init() {
         cards = []
@@ -16,7 +17,7 @@ public struct Game {
 
         SuitType.allCases.forEach { suit in
             ActionType.allCases.forEach { action in
-                newCards.append(Card(suitType: suit, rank: action.rawValue, actionType: action))
+                newCards.append(Card(suitType: suit, actionType: action))
             }
         }
 
@@ -25,14 +26,19 @@ public struct Game {
 
     mutating public func remove(card: Card) {
         if let index = cards.firstIndex(where: { $0 == card }) {
-            cards.remove(at: index)
+            let removedCard = cards.remove(at: index)
+
+            if removedCard.isKing {
+                kingsNumberChangedClosure?(numberOfKings())
+            }
+
             checkWinningCondition()
         }
     }
 
     public func numberOfKings() -> Int {
         return cards.reduce(0) { (result: Int, card: Card) -> Int in
-            card.rank == "K" ? result + 1 : result
+            card.isKing ? result + 1 : result
         }
     }
 
