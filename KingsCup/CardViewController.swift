@@ -20,7 +20,7 @@ class CardViewController: UIViewController {
         didSet {
             suitLabels.forEach { $0.text = card?.rank }
             suitImageViews.forEach { $0.image = UIImage(named: card?.suitType.rawValue ?? "spades" )  }
-            actionTypeTitleLabel.text = card?.actionType.title
+            actionTypeTitleLabel.text = card?.actionType.title.uppercased()
             actionTypeBodyLabel.text = card?.actionType.body
 
             tintedSuitImageView.setImageColor(color: UIColor(named: "PrimaryColor") ?? .black)

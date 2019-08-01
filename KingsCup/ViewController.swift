@@ -13,25 +13,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView!
     @IBOutlet weak var cupImageView: UIImageView!
     @IBOutlet weak var crownsStackView: UIStackView!
-    
+    @IBOutlet weak var statusLabel: UILabel!
+
     var game: Game!
     var animationUpdate: (() -> Void)?
 
     let cardCellIdentifier = "CardCell"
+    let taunts = ["Seriously", "Coming Up", "Just One More", "This Is It", "Don't Think", "Drink Me", "Faster Mate", "You Sure?", "Alright Buddy?", "Come On"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         game = Game()
         game.build()
-        game.gameOverClosure = { game in
+        game.gameOverClosure = { [weak self] game in
             debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
         }
         game.kingsNumberChangedClosure = { [weak self] kingsLeft in
-            let crownImageView = self?.crownsStackView.arrangedSubviews[kingsLeft] as? UIImageView
-            crownImageView?.alpha = 0
+            guard let self = self else { return }
 
-            self?.cupImageView.image = UIImage(named: "cup_volume_\(kingsLeft)")
+            let feedbackGenerator = UIImpactFeedbackGenerator()
+            feedbackGenerator.impactOccurred()
+
+            let crownImageView = self.crownsStackView.arrangedSubviews[kingsLeft] as? UIImageView
+            UIView.animate(withDuration: 0.3, animations: {
+                crownImageView?.alpha = 0
+            })
+
+            UIView.transition(with: self.cupImageView, duration: 0.3, options: .transitionFlipFromBottom, animations: {
+                self.cupImageView.image = UIImage(named: "cup_volume_\(kingsLeft)")
+            }, completion: nil)
         }
 
         cardCollectionView.collectionViewLayout = CardFlowLayout()
@@ -57,6 +68,8 @@ class ViewController: UIViewController {
             self?.cardCollectionView.performBatchUpdates({
                 self?.cardCollectionView.deleteItems(at: [IndexPath(item: index!, section: 0)])
             }, completion: nil)
+
+            self?.statusLabel.text = self?.game.numberOfKings() ?? 0 > 0 ? self?.taunts.randomElement()?.uppercased() : "Drink It Up!".uppercased()
         }
     }
 }
@@ -71,7 +84,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let cell: CardCell = collectionView.dequeueReusableCell(withReuseIdentifier: cardCellIdentifier,
                 for: indexPath) as! CardCell
 
+        #if DEBUG
         cell.debugLabel.text = "\(game.cards[indexPath.item].rank) \(game.cards[indexPath.item].suitType.rawValue)"
+        #endif
 
         return cell
     }
@@ -95,8 +110,8 @@ class CardFlowLayout: UICollectionViewFlowLayout {
         scrollDirection = .horizontal
 
         let screenHeight = UIScreen.main.bounds.height
-        let cellHeight = screenHeight / 4
-        let cellWidth = cellHeight * (10.0 / 16.0)
+        let cellHeight = screenHeight / 3
+        let cellWidth = cellHeight * (9.0 / 16.0)
 
         self.itemSize = CGSize(width: cellWidth, height: cellHeight)
         self.sectionInset = UIEdgeInsets(top: 0.0, left: self.minimumInteritemSpacing, bottom: 0.0, right: self.minimumInteritemSpacing)

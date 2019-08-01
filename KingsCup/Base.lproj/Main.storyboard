@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="league_spartan.otf">
+            <string>LeagueSpartan-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,15 +25,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icD-AB-io5">
-                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                <rect key="frame" x="0.0" y="672" width="414" height="224"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-VU-o15">
-                                <rect key="frame" x="0.0" y="606" width="414" height="256"/>
+                                <rect key="frame" x="0.0" y="563" width="414" height="299"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="256" id="iTR-zs-ksN"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Chk-kY-KcM">
                                     <size key="itemSize" width="120" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -43,25 +45,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-iW-ha5">
-                                                    <rect key="frame" x="-38" y="14" width="126" height="61.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-1a-v4f">
+                                                    <rect key="frame" x="60" y="192" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-iW-ha5">
+                                                    <rect key="frame" x="-7.5" y="58" width="135" height="84.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-1a-v4f">
-                                                            <rect key="frame" x="26.5" y="0.0" width="33" height="16"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-vi-wCj">
-                                                            <rect key="frame" x="21" y="16" width="44" height="66.000000000000057"/>
+                                                            <rect key="frame" x="52.5" y="0.0" width="30" height="45.000000000000057"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="66" id="6JH-rh-ew4"/>
-                                                                <constraint firstAttribute="width" constant="44" id="epe-mX-meN"/>
+                                                                <constraint firstAttribute="height" constant="45" id="6JH-rh-ew4"/>
+                                                                <constraint firstAttribute="width" constant="30" id="epe-mX-meN"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="King's Cup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
-                                                            <rect key="frame" x="0.0" y="82" width="86" height="20.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
+                                                            <rect key="frame" x="0.0" y="57" width="135" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -71,6 +73,8 @@
                                         </view>
                                         <color key="backgroundColor" name="PrimaryColor"/>
                                         <constraints>
+                                            <constraint firstItem="nCm-1a-v4f" firstAttribute="centerX" secondItem="6Mu-qq-bZi" secondAttribute="centerX" id="6NL-b8-IUn"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="nCm-1a-v4f" secondAttribute="bottom" id="Cx1-ua-YHl"/>
                                             <constraint firstItem="HHl-iW-ha5" firstAttribute="centerX" secondItem="6Mu-qq-bZi" secondAttribute="centerX" id="tKr-sE-wmT"/>
                                             <constraint firstItem="HHl-iW-ha5" firstAttribute="centerY" secondItem="6Mu-qq-bZi" secondAttribute="centerY" id="vW6-4z-bq9"/>
                                         </constraints>
@@ -107,15 +111,15 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-c9-hPB">
-                                <rect key="frame" x="137" y="314.5" width="140" height="177.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-c9-hPB">
+                                <rect key="frame" x="133" y="246.5" width="148.5" height="179"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup_volume_4" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-YI-MiL">
-                                        <rect key="frame" x="5.5" y="0.0" width="129" height="133.5"/>
+                                        <rect key="frame" x="9.5" y="0.0" width="129" height="133"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="King's Cup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-tk-Wjr">
-                                        <rect key="frame" x="0.0" y="141.5" width="140" height="36"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S BEGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-tk-Wjr">
+                                        <rect key="frame" x="0.0" y="149" width="148.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -124,11 +128,12 @@
                         </subviews>
                         <color key="backgroundColor" name="PrimaryDarkColor"/>
                         <constraints>
-                            <constraint firstItem="icD-AB-io5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="DcN-9H-t0G"/>
+                            <constraint firstItem="icD-AB-io5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="DcN-9H-t0G"/>
                             <constraint firstItem="mLh-VU-o15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dkn-Fp-DoI"/>
                             <constraint firstItem="iND-Lu-qFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ii7-cL-gpY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mLh-VU-o15" secondAttribute="bottom" id="LdY-nG-w77"/>
-                            <constraint firstItem="cJJ-c9-hPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="TLM-ug-WEq"/>
+                            <constraint firstItem="mLh-VU-o15" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1001/3000" id="OiH-jZ-SF6"/>
+                            <constraint firstItem="cJJ-c9-hPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.75" id="TLM-ug-WEq"/>
                             <constraint firstItem="iND-Lu-qFh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="UM5-X3-cbC"/>
                             <constraint firstItem="cJJ-c9-hPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XGf-Rn-de2"/>
                             <constraint firstItem="icD-AB-io5" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Z7I-Zu-NAp"/>
@@ -143,6 +148,7 @@
                         <outlet property="cardCollectionView" destination="mLh-VU-o15" id="ToA-vO-7qk"/>
                         <outlet property="crownsStackView" destination="iND-Lu-qFh" id="Ol2-cM-HQL"/>
                         <outlet property="cupImageView" destination="iFb-YI-MiL" id="jbc-M7-LsV"/>
+                        <outlet property="statusLabel" destination="CQv-tk-Wjr" id="52k-Tn-4IQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -161,16 +167,16 @@
                                 <rect key="frame" x="0.0" y="542" width="414.00000000000011" height="354"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-PO-dK9">
-                                <rect key="frame" x="0.0" y="44" width="44" height="80"/>
+                                <rect key="frame" x="8" y="52" width="44" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84l-xk-llg">
-                                        <rect key="frame" x="14.5" y="0.0" width="15.5" height="36"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <rect key="frame" x="15" y="0.0" width="14.5" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="i6J-ua-5Tc">
-                                        <rect key="frame" x="0.0" y="36" width="44" height="44"/>
+                                        <rect key="frame" x="0.0" y="37.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="pWd-KY-a4G"/>
                                             <constraint firstAttribute="height" constant="44" id="xiw-8f-WZZ"/>
@@ -179,25 +185,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JA6-rx-6DP">
-                                <rect key="frame" x="370" y="782" width="44" height="80"/>
+                                <rect key="frame" x="362" y="772.5" width="44" height="81.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKY-mD-dnN">
-                                        <rect key="frame" x="14.5" y="0.0" width="15.5" height="36"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <color key="textColor" name="PrimaryColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="jym-CW-Uic">
-                                        <rect key="frame" x="0.0" y="36" width="44" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="8XC-cn-Pin"/>
                                             <constraint firstAttribute="height" constant="44" id="9wy-aE-0A5"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKY-mD-dnN">
+                                        <rect key="frame" x="15" y="44" width="14.5" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-3c-jL6">
-                                <rect key="frame" x="64" y="228.5" width="286" height="439"/>
+                                <rect key="frame" x="64" y="227" width="286" height="442.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="7He-UB-z0N">
                                         <rect key="frame" x="47" y="0.0" width="192" height="192"/>
@@ -207,19 +213,19 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-Iv-BPl">
-                                        <rect key="frame" x="106" y="208" width="74" height="36"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <rect key="frame" x="101.5" y="208" width="83" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never have I ever.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1p-4G-qwd">
-                                        <rect key="frame" x="70" y="260" width="146" height="20.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <rect key="frame" x="54.5" y="261.5" width="177" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMP-dV-Gmh">
-                                        <rect key="frame" x="143" y="296.5" width="0.0" height="32"/>
+                                        <rect key="frame" x="143" y="300" width="0.0" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" id="8BA-2q-aMR"/>
@@ -227,7 +233,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv4-VE-XZ0">
-                                        <rect key="frame" x="96" y="344.5" width="94.5" height="94.5"/>
+                                        <rect key="frame" x="96" y="348" width="94.5" height="94.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="33" minY="33" maxX="33" maxY="33"/>
                                         <state key="normal" image="checked"/>
@@ -247,14 +253,14 @@
                         <color key="backgroundColor" name="PrimaryColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="XLW-e8-a5E" secondAttribute="bottom" id="8zz-Jy-Jv5"/>
-                            <constraint firstItem="lpe-1A-Ub3" firstAttribute="trailing" secondItem="JA6-rx-6DP" secondAttribute="trailing" id="AeD-rw-J96"/>
+                            <constraint firstItem="lpe-1A-Ub3" firstAttribute="trailing" secondItem="JA6-rx-6DP" secondAttribute="trailing" constant="8" id="AeD-rw-J96"/>
                             <constraint firstItem="XLW-e8-a5E" firstAttribute="width" secondItem="rfp-P5-wCa" secondAttribute="width" id="Eij-9t-2Tg"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="centerX" secondItem="rfp-P5-wCa" secondAttribute="centerX" id="JDV-Yq-Ho7"/>
-                            <constraint firstItem="JA6-rx-6DP" firstAttribute="bottom" secondItem="lpe-1A-Ub3" secondAttribute="bottom" id="LPx-E5-cJF"/>
+                            <constraint firstItem="JA6-rx-6DP" firstAttribute="bottom" secondItem="lpe-1A-Ub3" secondAttribute="bottom" constant="-8" id="LPx-E5-cJF"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="leading" secondItem="lpe-1A-Ub3" secondAttribute="leading" constant="64" id="NsZ-lU-BEy"/>
+                            <constraint firstItem="Dbv-PO-dK9" firstAttribute="leading" secondItem="lpe-1A-Ub3" secondAttribute="leading" constant="8" id="Pb8-5E-h0h"/>
                             <constraint firstItem="lpe-1A-Ub3" firstAttribute="leading" secondItem="XLW-e8-a5E" secondAttribute="leading" id="R7f-1l-AKp"/>
-                            <constraint firstItem="Dbv-PO-dK9" firstAttribute="top" secondItem="lpe-1A-Ub3" secondAttribute="top" id="Sh2-jT-ms5"/>
-                            <constraint firstItem="Dbv-PO-dK9" firstAttribute="leading" secondItem="lpe-1A-Ub3" secondAttribute="leading" id="X5t-y5-Dnt"/>
+                            <constraint firstItem="Dbv-PO-dK9" firstAttribute="top" secondItem="lpe-1A-Ub3" secondAttribute="top" constant="8" id="Sh2-jT-ms5"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="centerY" secondItem="rfp-P5-wCa" secondAttribute="centerY" id="XeO-s9-5DC"/>
                             <constraint firstItem="lpe-1A-Ub3" firstAttribute="trailing" secondItem="iKQ-3c-jL6" secondAttribute="trailing" constant="64" id="zSK-sD-ZKQ"/>
                         </constraints>

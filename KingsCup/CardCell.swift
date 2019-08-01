@@ -10,10 +10,4 @@ import UIKit
 
 class CardCell: UICollectionViewCell {
     @IBOutlet weak var debugLabel: UILabel!
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-
-        backgroundColor = UIColor(named: "PrimaryColor")
-    }
 }
