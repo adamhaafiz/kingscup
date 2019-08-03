@@ -52,17 +52,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-iW-ha5">
-                                                    <rect key="frame" x="-7.5" y="58" width="135" height="84.5"/>
+                                                    <rect key="frame" x="-3" y="58.5" width="126" height="83"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-vi-wCj">
-                                                            <rect key="frame" x="52.5" y="0.0" width="30" height="45.000000000000057"/>
+                                                            <rect key="frame" x="48" y="0.0" width="30" height="45.000000000000057"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="6JH-rh-ew4"/>
                                                                 <constraint firstAttribute="width" constant="30" id="epe-mX-meN"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
-                                                            <rect key="frame" x="0.0" y="57" width="135" height="27.5"/>
+                                                            <rect key="frame" x="0.0" y="57" width="126" height="26"/>
                                                             <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

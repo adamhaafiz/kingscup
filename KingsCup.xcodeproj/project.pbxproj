@@ -10,8 +10,10 @@
 		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
 		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
+		150D957322F5D44A00DBBF8B /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D956E22F5BB7000DBBF8B /* Lottie.framework */; };
 		151000DA22F3686C002456B5 /* league_spartan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151000D922F3686B002456B5 /* league_spartan.otf */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
+		1596636122F5D6B500047846 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1596636022F5D6B500047846 /* confetti.json */; };
 		15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A522EDE869002EAC7D /* AppDelegate.swift */; };
 		15D182A822EDE869002EAC7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A722EDE869002EAC7D /* ViewController.swift */; };
 		15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D182A922EDE869002EAC7D /* Main.storyboard */; };
@@ -75,8 +77,10 @@
 		13E501CA72D68584E38EB23C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
+		150D956E22F5BB7000DBBF8B /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		151000D922F3686B002456B5 /* league_spartan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = league_spartan.otf; path = "../../../Downloads/King's Cup/Resources/font/league_spartan.otf"; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1596636022F5D6B500047846 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		15D182A222EDE869002EAC7D /* KingsCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingsCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182A522EDE869002EAC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D182A722EDE869002EAC7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D182DF22EDE894002EAC7D /* KingsCupData.framework in Frameworks */,
+				150D957322F5D44A00DBBF8B /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +138,7 @@
 		15D1829922EDE869002EAC7D = {
 			isa = PBXGroup;
 			children = (
+				150D956E22F5BB7000DBBF8B /* Lottie.framework */,
 				15D182A422EDE869002EAC7D /* KingsCup */,
 				15D182B922EDE869002EAC7D /* KingsCupUITests */,
 				15D182CB22EDE894002EAC7D /* KingsCupData */,
@@ -164,6 +170,7 @@
 				15D182AE22EDE869002EAC7D /* LaunchScreen.storyboard */,
 				15D182B122EDE869002EAC7D /* Info.plist */,
 				151000D922F3686B002456B5 /* league_spartan.otf */,
+				1596636022F5D6B500047846 /* confetti.json */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 				15D1829F22EDE869002EAC7D /* Frameworks */,
 				15D182A022EDE869002EAC7D /* Resources */,
 				15D182E422EDE894002EAC7D /* Embed Frameworks */,
+				15AB8FE422F5D46F00AAE489 /* Carthage - copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1596636122F5D6B500047846 /* confetti.json in Resources */,
 				151000DA22F3686C002456B5 /* league_spartan.otf in Resources */,
 				15D182B022EDE869002EAC7D /* LaunchScreen.storyboard in Resources */,
 				15D182AD22EDE869002EAC7D /* Assets.xcassets in Resources */,
@@ -366,6 +375,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15AB8FE422F5D46F00AAE489 /* Carthage - copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			name = "Carthage - copy-frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15D1829E22EDE869002EAC7D /* Sources */ = {
@@ -572,6 +604,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KingsCup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +626,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KingsCup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

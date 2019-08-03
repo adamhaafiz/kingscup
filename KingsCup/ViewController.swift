@@ -8,6 +8,7 @@
 
 import UIKit
 import KingsCupData
+import Lottie
 
 class ViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView!
@@ -28,9 +29,26 @@ class ViewController: UIViewController {
         game.build()
         game.gameOverClosure = { [weak self] game in
             debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
+
+            guard let self = self else {
+                return
+            }
+
+            let animationView = AnimationView(name: "confetti")
+            self.view.addSubview(animationView)
+            animationView.isUserInteractionEnabled = false
+            animationView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                animationView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+                animationView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+                animationView.heightAnchor.constraint(equalTo: self.view.heightAnchor),
+                animationView.widthAnchor.constraint(equalTo: self.view.widthAnchor)])
+            animationView.play()
         }
         game.kingsNumberChangedClosure = { [weak self] kingsLeft in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
 
             let feedbackGenerator = UIImpactFeedbackGenerator()
             feedbackGenerator.impactOccurred()
@@ -58,7 +76,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func unwindToHomeScreen(_ unwindSegue: UIStoryboardSegue) {
-        guard let cardViewController = unwindSegue.source as? CardViewController, let cardToBeRemoved = cardViewController.card else {
+        guard let cardViewController = unwindSegue.source as? CardViewController,
+              let cardToBeRemoved = cardViewController.card else {
             return
         }
 
@@ -69,7 +88,8 @@ class ViewController: UIViewController {
                 self?.cardCollectionView.deleteItems(at: [IndexPath(item: index!, section: 0)])
             }, completion: nil)
 
-            self?.statusLabel.text = self?.game.numberOfKings() ?? 0 > 0 ? self?.taunts.randomElement()?.uppercased() : "Drink It Up!".uppercased()
+            self?.statusLabel.text = self?.game.numberOfKings() ?? 0 > 0 ? self?.taunts.randomElement()?
+                    .uppercased() : "Drink It Up!".uppercased()
         }
     }
 }
@@ -114,7 +134,10 @@ class CardFlowLayout: UICollectionViewFlowLayout {
         let cellWidth = cellHeight * (9.0 / 16.0)
 
         self.itemSize = CGSize(width: cellWidth, height: cellHeight)
-        self.sectionInset = UIEdgeInsets(top: 0.0, left: self.minimumInteritemSpacing, bottom: 0.0, right: self.minimumInteritemSpacing)
+        self.sectionInset = UIEdgeInsets(top: 0.0,
+                left: self.minimumInteritemSpacing,
+                bottom: 0.0,
+                right: self.minimumInteritemSpacing)
     }
 }
 
