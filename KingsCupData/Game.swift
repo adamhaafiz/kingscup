@@ -42,9 +42,10 @@ public struct Game {
         }
     }
 
-    private func checkWinningCondition() {
+    private mutating func checkWinningCondition() {
         if numberOfKings() == 0 {
             gameOverClosure?(self)
+            gameOverClosure = nil
         }
     }
 }
