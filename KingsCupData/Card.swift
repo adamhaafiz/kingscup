@@ -92,7 +92,7 @@ public struct Card: Equatable {
     public let rank: String
     public let actionType: ActionType
 
-    var isKing: Bool {
+    public var isKing: Bool {
         return rank == ActionType.king.rawValue
     }
 

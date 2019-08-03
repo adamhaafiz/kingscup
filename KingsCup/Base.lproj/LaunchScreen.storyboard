@@ -1,25 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TXf-ca-kIL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="n3h-hJ-GC9">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="TXf-ca-kIL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GlM-nA-ebg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Z8-I2-GPy">
+                                <rect key="frame" x="0.0" y="672" width="414" height="224"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-lN-1cb">
+                                <rect key="frame" x="199" y="440" width="16" height="16"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-bg-SVh">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="4Z8-I2-GPy" firstAttribute="height" secondItem="GlM-nA-ebg" secondAttribute="height" multiplier="0.25" id="JER-hh-zzo"/>
+                            <constraint firstItem="sNQ-E0-Y4l" firstAttribute="trailing" secondItem="4Z8-I2-GPy" secondAttribute="trailing" id="Od4-hS-ic2"/>
+                            <constraint firstItem="SUA-lN-1cb" firstAttribute="centerX" secondItem="GlM-nA-ebg" secondAttribute="centerX" id="U3s-u7-PZc"/>
+                            <constraint firstItem="SUA-lN-1cb" firstAttribute="centerY" secondItem="GlM-nA-ebg" secondAttribute="centerY" id="jyG-cr-mJo"/>
+                            <constraint firstAttribute="bottom" secondItem="4Z8-I2-GPy" secondAttribute="bottom" id="qqd-dG-yjE"/>
+                            <constraint firstItem="4Z8-I2-GPy" firstAttribute="leading" secondItem="GlM-nA-ebg" secondAttribute="leading" id="zN1-F8-KPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sNQ-E0-Y4l"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pa5-jn-XPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-822" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kingscup_logo_no_bg" width="129.33332824707031" height="208.66667175292969"/>
+        <namedColor name="AccentColor">
+            <color red="0.90196078431372551" green="0.22745098039215686" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.15686274509803921" green="0.19607843137254902" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

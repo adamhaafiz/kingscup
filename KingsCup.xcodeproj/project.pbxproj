@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13E500BF78A7E067730CDDF1 /* king.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E5005F92F8C3C132C00FE7 /* king.wav */; };
 		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
+		13E503865E21FEDC70CACD11 /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E50F5682D0C0E07E454DC3 /* game_over.wav */; };
+		13E508011C18C0A02913C937 /* oooh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E50758DA89857AE2FE185F /* oooh.wav */; };
 		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
+		13E50C0C203B86132C8B822F /* whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E508A92172F0D1CCF52465 /* whoosh.wav */; };
+		13E50C9EA5F1DD6E85E10272 /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E505EA12C6FA1FB253FAAF /* flip.wav */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
 		150D957322F5D44A00DBBF8B /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D956E22F5BB7000DBBF8B /* Lottie.framework */; };
 		151000DA22F3686C002456B5 /* league_spartan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151000D922F3686B002456B5 /* league_spartan.otf */; };
+		153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA09C22F6075000E32241 /* GuideViewController.swift */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
 		1596636122F5D6B500047846 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1596636022F5D6B500047846 /* confetti.json */; };
 		15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A522EDE869002EAC7D /* AppDelegate.swift */; };
@@ -74,11 +80,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13E5005F92F8C3C132C00FE7 /* king.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = king.wav; sourceTree = "<group>"; };
 		13E501CA72D68584E38EB23C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		13E505EA12C6FA1FB253FAAF /* flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flip.wav; sourceTree = "<group>"; };
+		13E50758DA89857AE2FE185F /* oooh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oooh.wav; sourceTree = "<group>"; };
+		13E508A92172F0D1CCF52465 /* whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whoosh.wav; sourceTree = "<group>"; };
 		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
+		13E50F5682D0C0E07E454DC3 /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
 		150D956E22F5BB7000DBBF8B /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		151000D922F3686B002456B5 /* league_spartan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = league_spartan.otf; path = "../../../Downloads/King's Cup/Resources/font/league_spartan.otf"; sourceTree = "<group>"; };
+		153DA09C22F6075000E32241 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1596636022F5D6B500047846 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		15D182A222EDE869002EAC7D /* KingsCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingsCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +175,7 @@
 			children = (
 				15D182A522EDE869002EAC7D /* AppDelegate.swift */,
 				15D182A922EDE869002EAC7D /* Main.storyboard */,
+				153DA09C22F6075000E32241 /* GuideViewController.swift */,
 				15D182A722EDE869002EAC7D /* GameViewController.swift */,
 				15F76F8F22EE3AAA00C92754 /* CardCell.swift */,
 				1560CE1322EF77B900943017 /* CardViewController.swift */,
@@ -171,6 +184,11 @@
 				15D182B122EDE869002EAC7D /* Info.plist */,
 				151000D922F3686B002456B5 /* league_spartan.otf */,
 				1596636022F5D6B500047846 /* confetti.json */,
+				13E508A92172F0D1CCF52465 /* whoosh.wav */,
+				13E50758DA89857AE2FE185F /* oooh.wav */,
+				13E505EA12C6FA1FB253FAAF /* flip.wav */,
+				13E5005F92F8C3C132C00FE7 /* king.wav */,
+				13E50F5682D0C0E07E454DC3 /* game_over.wav */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -350,6 +368,11 @@
 				15D182B022EDE869002EAC7D /* LaunchScreen.storyboard in Resources */,
 				15D182AD22EDE869002EAC7D /* Assets.xcassets in Resources */,
 				15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */,
+				13E50C0C203B86132C8B822F /* whoosh.wav in Resources */,
+				13E508011C18C0A02913C937 /* oooh.wav in Resources */,
+				13E50C9EA5F1DD6E85E10272 /* flip.wav in Resources */,
+				13E500BF78A7E067730CDDF1 /* king.wav in Resources */,
+				13E503865E21FEDC70CACD11 /* game_over.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +431,7 @@
 				15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */,
 				15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */,
 				15F76F9022EE3AAA00C92754 /* CardCell.swift in Sources */,
+				153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

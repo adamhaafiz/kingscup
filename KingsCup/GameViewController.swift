@@ -9,6 +9,7 @@
 import UIKit
 import KingsCupData
 import Lottie
+import AVFoundation
 
 class GameViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView!
@@ -18,6 +19,10 @@ class GameViewController: UIViewController {
 
     var game: Game!
     var animationUpdate: (() -> Void)?
+
+    var flipSoundEngine: AVAudioPlayer?
+    var whooshSoundEngine: AVAudioPlayer?
+    var gameOverSoundEngine: AVAudioPlayer?
 
     let cardCellIdentifier = "CardCell"
     let taunts = ["Seriously", "Coming Up", "Just One More", "This Is It", "Don't Think", "Drink Me", "Faster Mate", "You Sure?", "Alright Buddy?", "Come On"]
@@ -44,6 +49,13 @@ class GameViewController: UIViewController {
                 animationView.heightAnchor.constraint(equalTo: self.view.heightAnchor),
                 animationView.widthAnchor.constraint(equalTo: self.view.widthAnchor)])
             animationView.play()
+
+            if self.gameOverSoundEngine == nil {
+                let fileURL = Bundle.main.path(forResource: "game_over", ofType: "wav")!
+                self.gameOverSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            }
+
+            self.gameOverSoundEngine!.play()
         }
         game.kingsNumberChangedClosure = { [weak self] kingsLeft in
             guard let self = self else {
@@ -80,6 +92,13 @@ class GameViewController: UIViewController {
               let cardToBeRemoved = cardViewController.card else {
             return
         }
+
+        if self.whooshSoundEngine == nil {
+            let fileURL = Bundle.main.path(forResource: "whoosh", ofType: "wav")!
+            self.whooshSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+        }
+
+        self.whooshSoundEngine!.play()
 
         animationUpdate = { [weak self] in
             let index = self?.game.cards.firstIndex(of: cardToBeRemoved)!
@@ -119,6 +138,14 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
         _ = cardViewController.view
 
         cardViewController.card = game.cards[indexPath.item]
+
+        if flipSoundEngine == nil {
+            let fileURL = Bundle.main.path(forResource: "flip", ofType: "wav")!
+            flipSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+        }
+
+        flipSoundEngine!.play()
+
         present(cardViewController, animated: true)
     }
 }

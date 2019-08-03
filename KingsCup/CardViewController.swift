@@ -8,6 +8,7 @@
 
 import UIKit
 import KingsCupData
+import AVFoundation
 
 class CardViewController: UIViewController {
     @IBOutlet var suitLabels: [UILabel]!
@@ -15,6 +16,8 @@ class CardViewController: UIViewController {
     @IBOutlet weak var actionTypeTitleLabel: UILabel!
     @IBOutlet weak var actionTypeBodyLabel: UILabel!
     @IBOutlet weak var tintedSuitImageView: UIImageView!
+
+    var ooohSoundEngine: AVAudioPlayer?
 
     var card: Card? {
         didSet {
@@ -24,6 +27,12 @@ class CardViewController: UIViewController {
             actionTypeBodyLabel.text = card?.actionType.body
 
             tintedSuitImageView.setImageColor(color: UIColor(named: "PrimaryColor") ?? .black)
+
+            if card?.isKing ?? false {
+                let fileURL = Bundle.main.path(forResource: "oooh", ofType: "wav")!
+                self.ooohSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                self.ooohSoundEngine!.play()
+            }
         }
     }
 }
