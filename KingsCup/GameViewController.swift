@@ -23,12 +23,20 @@ class GameViewController: UIViewController {
     var flipSoundEngine: AVAudioPlayer?
     var whooshSoundEngine: AVAudioPlayer?
     var gameOverSoundEngine: AVAudioPlayer?
+    var kingSoundEngine: AVAudioPlayer?
 
     let cardCellIdentifier = "CardCell"
     let taunts = ["Seriously", "Coming Up", "Just One More", "This Is It", "Don't Think", "Drink Me", "Faster Mate", "You Sure?", "Alright Buddy?", "Come On"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if kingSoundEngine == nil {
+            let fileURL = Bundle.main.path(forResource: "king", ofType: "wav")!
+            kingSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+        }
+
+        kingSoundEngine!.play()
 
         game = Game()
         game.build()
