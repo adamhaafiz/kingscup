@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  KingsCup
 //
 //  Created by Adam Haafiz on 28/07/2019.
@@ -10,7 +10,7 @@ import UIKit
 import KingsCupData
 import Lottie
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView!
     @IBOutlet weak var cupImageView: UIImageView!
     @IBOutlet weak var crownsStackView: UIStackView!
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension GameViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return game.cards.count
     }
