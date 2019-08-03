@@ -120,12 +120,13 @@ class GameViewController: UIViewController {
         }
     }
     
-    @IBAction func showPauseSheet(_ sender: Any) {
+    @IBAction func showPauseSheet(_ sender: UIView) {
         let actionSheet = UIAlertController(title: nil, message: "Game Paused", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Exit Game", style: .destructive) { [weak self] _ in 
             self?.dismiss(animated: true)
         })
         actionSheet.addAction(UIAlertAction(title: "Resume Playing", style: .cancel))
+        actionSheet.popoverPresentationController?.sourceView = sender
 
         present(actionSheet, animated: true)
     }
