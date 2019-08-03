@@ -268,6 +268,25 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxW-E5-qKR">
+                                <rect key="frame" x="340" y="52" width="66" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SxW-E5-qKR" secondAttribute="height" multiplier="1:1" id="7Hz-Az-0Sy"/>
+                                    <constraint firstAttribute="height" constant="66" id="FlW-z8-wg4"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
+                                <state key="normal" image="menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPauseSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNL-o5-OKA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="PrimaryDarkColor"/>
                         <constraints>
@@ -277,10 +296,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mLh-VU-o15" secondAttribute="bottom" id="LdY-nG-w77"/>
                             <constraint firstItem="mLh-VU-o15" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1001/3000" id="OiH-jZ-SF6"/>
                             <constraint firstItem="cJJ-c9-hPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.75" id="TLM-ug-WEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SxW-E5-qKR" secondAttribute="trailing" constant="8" id="TYz-vR-lw0"/>
                             <constraint firstItem="iND-Lu-qFh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="UM5-X3-cbC"/>
                             <constraint firstItem="cJJ-c9-hPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XGf-Rn-de2"/>
                             <constraint firstItem="icD-AB-io5" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Z7I-Zu-NAp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mLh-VU-o15" secondAttribute="trailing" id="afB-qp-k4T"/>
+                            <constraint firstItem="SxW-E5-qKR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="f3R-o9-1N0"/>
                             <constraint firstItem="icD-AB-io5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gVf-5P-e92"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="icD-AB-io5" secondAttribute="trailing" id="lq7-g2-2S0"/>
                             <constraint firstItem="iND-Lu-qFh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uUr-0y-B9P"/>
@@ -550,6 +571,7 @@
         <image name="crown" width="165.66667175292969" height="84.333335876464844"/>
         <image name="cup_volume_4" width="129.33332824707031" height="133.33332824707031"/>
         <image name="kingscup_logo_no_bg" width="129.33332824707031" height="208.66667175292969"/>
+        <image name="menu" width="152" height="152"/>
         <namedColor name="AccentColor">
             <color red="0.90196078431372551" green="0.22745098039215686" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

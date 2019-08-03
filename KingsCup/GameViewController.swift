@@ -111,6 +111,16 @@ class GameViewController: UIViewController {
                     .uppercased() : "Drink It Up!".uppercased()
         }
     }
+    
+    @IBAction func showPauseSheet(_ sender: Any) {
+        let actionSheet = UIAlertController(title: nil, message: "Game Paused", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Exit Game", style: .destructive) { [weak self] _ in 
+            self?.dismiss(animated: true)
+        })
+        actionSheet.addAction(UIAlertAction(title: "Resume Playing", style: .cancel))
+
+        present(actionSheet, animated: true)
+    }
 }
 
 extension GameViewController: UICollectionViewDataSource, UICollectionViewDelegate {
