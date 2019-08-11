@@ -19,7 +19,7 @@
         <!-- -->
         <scene sceneID="4Vm-dR-yIE">
             <objects>
-                <viewController title=" " id="dDC-S2-FGw" sceneMemberID="viewController">
+                <viewController title=" " id="dDC-S2-FGw" customClass="MainMenuViewController" customModule="KingsCup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NX9-YJ-1sz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,11 @@
                         <viewLayoutGuide key="safeArea" id="jPZ-49-Jjl"/>
                     </view>
                     <navigationItem key="navigationItem" id="B64-vV-e5t"/>
+                    <connections>
+                        <outlet property="guideButton" destination="VTV-Mz-dGu" id="XTM-Ci-VHl"/>
+                        <outlet property="startButton" destination="Rwa-dn-FSe" id="cNN-iX-yWb"/>
+                        <outlet property="titleLabel" destination="vSN-NE-RMa" id="jC9-W1-CID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf1-Hy-jTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="18.75"/>
+            <point key="canvasLocation" x="978" y="19"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="rJy-k3-MdB">

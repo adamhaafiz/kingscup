@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,10 +15,12 @@
 		13E50C0C203B86132C8B822F /* whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E508A92172F0D1CCF52465 /* whoosh.wav */; };
 		13E50C9EA5F1DD6E85E10272 /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E505EA12C6FA1FB253FAAF /* flip.wav */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
-		150D957322F5D44A00DBBF8B /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D956E22F5BB7000DBBF8B /* Lottie.framework */; };
 		151000DA22F3686C002456B5 /* league_spartan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151000D922F3686B002456B5 /* league_spartan.otf */; };
 		153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA09C22F6075000E32241 /* GuideViewController.swift */; };
+		155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
+		157567942300516400542E72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 157567962300516400542E72 /* Localizable.strings */; };
+		158ADFA6230060A3002361CE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ADFA5230060A3002361CE /* R.generated.swift */; };
 		1596636122F5D6B500047846 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1596636022F5D6B500047846 /* confetti.json */; };
 		15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A522EDE869002EAC7D /* AppDelegate.swift */; };
 		15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A722EDE869002EAC7D /* GameViewController.swift */; };
@@ -32,6 +34,10 @@
 		15D182DF22EDE894002EAC7D /* KingsCupData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; };
 		15D182E022EDE894002EAC7D /* KingsCupData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D182CA22EDE894002EAC7D /* KingsCupData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15F76F9022EE3AAA00C92754 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76F8F22EE3AAA00C92754 /* CardCell.swift */; };
+		2A57A36C939D968BE1F98779 /* Pods_KingsCupData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A81C8C48D5A0363ADCE0B1 /* Pods_KingsCupData.framework */; };
+		4DDFEF5DFE052B3247BD1948 /* Pods_KingsCupDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B68974B8598DA329C7D8C7 /* Pods_KingsCupDataTests.framework */; };
+		D8709BBA6CAB415185CE99EF /* Pods_KingsCupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CD12871EAD1B2DB30F86C2 /* Pods_KingsCupUITests.framework */; };
+		E3A853F4651229ACD70B35A1 /* Pods_KingsCup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1F1500170DA707D4B6577 /* Pods_KingsCup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,10 +94,13 @@
 		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		13E50F5682D0C0E07E454DC3 /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
-		150D956E22F5BB7000DBBF8B /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		151000D922F3686B002456B5 /* league_spartan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = league_spartan.otf; path = "../../../Downloads/King's Cup/Resources/font/league_spartan.otf"; sourceTree = "<group>"; };
 		153DA09C22F6075000E32241 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		157567952300516400542E72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		157567972300516800542E72 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		158ADFA5230060A3002361CE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1596636022F5D6B500047846 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		15D182A222EDE869002EAC7D /* KingsCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingsCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182A522EDE869002EAC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +119,18 @@
 		15D182D922EDE894002EAC7D /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		15D182DB22EDE894002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F76F8F22EE3AAA00C92754 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		28CD12871EAD1B2DB30F86C2 /* Pods_KingsCupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3911DE5C51D8797195C26A66 /* Pods-KingsCup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCup.release.xcconfig"; path = "Target Support Files/Pods-KingsCup/Pods-KingsCup.release.xcconfig"; sourceTree = "<group>"; };
+		41B68974B8598DA329C7D8C7 /* Pods_KingsCupDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCupDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585389469621EC450B51EC44 /* Pods-KingsCupData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupData.release.xcconfig"; path = "Target Support Files/Pods-KingsCupData/Pods-KingsCupData.release.xcconfig"; sourceTree = "<group>"; };
+		6000BDF8325EC29A4BD97F1A /* Pods-KingsCupData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupData.debug.xcconfig"; path = "Target Support Files/Pods-KingsCupData/Pods-KingsCupData.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2295955CB569B542088E07 /* Pods-KingsCupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupUITests.debug.xcconfig"; path = "Target Support Files/Pods-KingsCupUITests/Pods-KingsCupUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5EC45A96C5DC4BD8F6EBDE /* Pods-KingsCup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCup.debug.xcconfig"; path = "Target Support Files/Pods-KingsCup/Pods-KingsCup.debug.xcconfig"; sourceTree = "<group>"; };
+		7C52A51FC68D52CEDA64A6CF /* Pods-KingsCupDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupDataTests.debug.xcconfig"; path = "Target Support Files/Pods-KingsCupDataTests/Pods-KingsCupDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88A81C8C48D5A0363ADCE0B1 /* Pods_KingsCupData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCupData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C1F1500170DA707D4B6577 /* Pods_KingsCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDCDDADF6E103A53BCE06CF /* Pods-KingsCupDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupDataTests.release.xcconfig"; path = "Target Support Files/Pods-KingsCupDataTests/Pods-KingsCupDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7246FB13CA9E138204D31A7 /* Pods-KingsCupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupUITests.release.xcconfig"; path = "Target Support Files/Pods-KingsCupUITests/Pods-KingsCupUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D182DF22EDE894002EAC7D /* KingsCupData.framework in Frameworks */,
-				150D957322F5D44A00DBBF8B /* Lottie.framework in Frameworks */,
+				E3A853F4651229ACD70B35A1 /* Pods_KingsCup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8709BBA6CAB415185CE99EF /* Pods_KingsCupUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A57A36C939D968BE1F98779 /* Pods_KingsCupData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D182D322EDE894002EAC7D /* KingsCupData.framework in Frameworks */,
+				4DDFEF5DFE052B3247BD1948 /* Pods_KingsCupDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,12 +174,13 @@
 		15D1829922EDE869002EAC7D = {
 			isa = PBXGroup;
 			children = (
-				150D956E22F5BB7000DBBF8B /* Lottie.framework */,
 				15D182A422EDE869002EAC7D /* KingsCup */,
 				15D182B922EDE869002EAC7D /* KingsCupUITests */,
 				15D182CB22EDE894002EAC7D /* KingsCupData */,
 				15D182D822EDE894002EAC7D /* KingsCupDataTests */,
 				15D182A322EDE869002EAC7D /* Products */,
+				D1188A90442A070E97C7CB53 /* Pods */,
+				56AD1DCE3033D657604641A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +200,7 @@
 			children = (
 				15D182A522EDE869002EAC7D /* AppDelegate.swift */,
 				15D182A922EDE869002EAC7D /* Main.storyboard */,
+				155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */,
 				153DA09C22F6075000E32241 /* GuideViewController.swift */,
 				15D182A722EDE869002EAC7D /* GameViewController.swift */,
 				15F76F8F22EE3AAA00C92754 /* CardCell.swift */,
@@ -189,6 +215,8 @@
 				13E505EA12C6FA1FB253FAAF /* flip.wav */,
 				13E5005F92F8C3C132C00FE7 /* king.wav */,
 				13E50F5682D0C0E07E454DC3 /* game_over.wav */,
+				157567962300516400542E72 /* Localizable.strings */,
+				158ADFA5230060A3002361CE /* R.generated.swift */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -223,6 +251,32 @@
 			path = KingsCupDataTests;
 			sourceTree = "<group>";
 		};
+		56AD1DCE3033D657604641A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93C1F1500170DA707D4B6577 /* Pods_KingsCup.framework */,
+				88A81C8C48D5A0363ADCE0B1 /* Pods_KingsCupData.framework */,
+				41B68974B8598DA329C7D8C7 /* Pods_KingsCupDataTests.framework */,
+				28CD12871EAD1B2DB30F86C2 /* Pods_KingsCupUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1188A90442A070E97C7CB53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C5EC45A96C5DC4BD8F6EBDE /* Pods-KingsCup.debug.xcconfig */,
+				3911DE5C51D8797195C26A66 /* Pods-KingsCup.release.xcconfig */,
+				6000BDF8325EC29A4BD97F1A /* Pods-KingsCupData.debug.xcconfig */,
+				585389469621EC450B51EC44 /* Pods-KingsCupData.release.xcconfig */,
+				7C52A51FC68D52CEDA64A6CF /* Pods-KingsCupDataTests.debug.xcconfig */,
+				DFDCDDADF6E103A53BCE06CF /* Pods-KingsCupDataTests.release.xcconfig */,
+				6B2295955CB569B542088E07 /* Pods-KingsCupUITests.debug.xcconfig */,
+				F7246FB13CA9E138204D31A7 /* Pods-KingsCupUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -241,11 +295,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182BF22EDE869002EAC7D /* Build configuration list for PBXNativeTarget "KingsCup" */;
 			buildPhases = (
+				EAC3422BF8927DC33E1A9ECD /* [CP] Check Pods Manifest.lock */,
+				158ADFA423005FE5002361CE /* R.swift */,
 				15D1829E22EDE869002EAC7D /* Sources */,
 				15D1829F22EDE869002EAC7D /* Frameworks */,
 				15D182A022EDE869002EAC7D /* Resources */,
 				15D182E422EDE894002EAC7D /* Embed Frameworks */,
-				15AB8FE422F5D46F00AAE489 /* Carthage - copy-frameworks */,
+				B77580F1DCE41A279FCD4AC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +317,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182C222EDE869002EAC7D /* Build configuration list for PBXNativeTarget "KingsCupUITests" */;
 			buildPhases = (
+				CFEA08B6B5C042106B9BFB85 /* [CP] Check Pods Manifest.lock */,
 				15D182B222EDE869002EAC7D /* Sources */,
 				15D182B322EDE869002EAC7D /* Frameworks */,
 				15D182B422EDE869002EAC7D /* Resources */,
@@ -279,6 +336,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182E122EDE894002EAC7D /* Build configuration list for PBXNativeTarget "KingsCupData" */;
 			buildPhases = (
+				292C4D080B5F1F5291CF3ADE /* [CP] Check Pods Manifest.lock */,
 				15D182C522EDE894002EAC7D /* Headers */,
 				15D182C622EDE894002EAC7D /* Sources */,
 				15D182C722EDE894002EAC7D /* Frameworks */,
@@ -297,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182E522EDE894002EAC7D /* Build configuration list for PBXNativeTarget "KingsCupDataTests" */;
 			buildPhases = (
+				F3B48FBB2F0B723307751698 /* [CP] Check Pods Manifest.lock */,
 				15D182CE22EDE894002EAC7D /* Sources */,
 				15D182CF22EDE894002EAC7D /* Frameworks */,
 				15D182D022EDE894002EAC7D /* Resources */,
@@ -344,6 +403,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 15D1829922EDE869002EAC7D;
 			productRefGroup = 15D182A322EDE869002EAC7D /* Products */;
@@ -365,6 +425,7 @@
 			files = (
 				1596636122F5D6B500047846 /* confetti.json in Resources */,
 				151000DA22F3686C002456B5 /* league_spartan.otf in Resources */,
+				157567942300516400542E72 /* Localizable.strings in Resources */,
 				15D182B022EDE869002EAC7D /* LaunchScreen.storyboard in Resources */,
 				15D182AD22EDE869002EAC7D /* Assets.xcassets in Resources */,
 				15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */,
@@ -400,7 +461,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15AB8FE422F5D46F00AAE489 /* Carthage - copy-frameworks */ = {
+		158ADFA423005FE5002361CE /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,17 +469,122 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+				"$TEMP_DIR/rswift-lastrun",
 			);
-			name = "Carthage - copy-frameworks";
+			name = R.swift;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		292C4D080B5F1F5291CF3ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsCupData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77580F1DCE41A279FCD4AC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsCup/Pods-KingsCup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingsCup/Pods-KingsCup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingsCup/Pods-KingsCup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFEA08B6B5C042106B9BFB85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsCupUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC3422BF8927DC33E1A9ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsCup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B48FBB2F0B723307751698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsCupDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,6 +593,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */,
+				158ADFA6230060A3002361CE /* R.generated.swift in Sources */,
 				1560CE1422EF77B900943017 /* CardViewController.swift in Sources */,
 				15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */,
 				15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */,
@@ -487,6 +655,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		157567962300516400542E72 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157567952300516400542E72 /* en */,
+				157567972300516800542E72 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		15D182A922EDE869002EAC7D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -510,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -571,6 +749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -624,14 +803,12 @@
 		};
 		15D182C022EDE869002EAC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5EC45A96C5DC4BD8F6EBDE /* Pods-KingsCup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KingsCup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,15 +824,13 @@
 		};
 		15D182C122EDE869002EAC7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3911DE5C51D8797195C26A66 /* Pods-KingsCup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KingsCup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -671,6 +846,7 @@
 		};
 		15D182C322EDE869002EAC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2295955CB569B542088E07 /* Pods-KingsCupUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -691,6 +867,7 @@
 		};
 		15D182C422EDE869002EAC7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7246FB13CA9E138204D31A7 /* Pods-KingsCupUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -711,6 +888,7 @@
 		};
 		15D182E222EDE894002EAC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6000BDF8325EC29A4BD97F1A /* Pods-KingsCupData.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -739,6 +917,7 @@
 		};
 		15D182E322EDE894002EAC7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585389469621EC450B51EC44 /* Pods-KingsCupData.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -767,6 +946,7 @@
 		};
 		15D182E622EDE894002EAC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C52A51FC68D52CEDA64A6CF /* Pods-KingsCupDataTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -786,6 +966,7 @@
 		};
 		15D182E722EDE894002EAC7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDCDDADF6E103A53BCE06CF /* Pods-KingsCupDataTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
