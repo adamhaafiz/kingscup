@@ -16,9 +16,9 @@ class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = R.string.localizable.board_title_lets_begin()
-        startButton.setTitle("Start".uppercased(), for: .normal)
-        guideButton.setTitle("Guide".uppercased(), for: .normal)
+        titleLabel.text = R.string.localizable.app_name()
+        startButton.setTitle(R.string.localizable.board_title_lets_begin().uppercased(), for: .normal)
+        guideButton.setTitle(R.string.localizable.preference_title_quick_guide(), for: .normal)
     }
     
 

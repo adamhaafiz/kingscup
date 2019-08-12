@@ -266,716 +266,716 @@ struct R: Rswift.Validatable {
     struct localizable {
       /// en translation: All guys drink!
       /// 
-      /// Locales: en, es
-      static let body_dudes = Rswift.StringResource(key: "body_dudes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_dudes = Rswift.StringResource(key: "body_dudes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: All ladies drink!
       /// 
-      /// Locales: en, es
-      static let body_chicks = Rswift.StringResource(key: "body_chicks", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_chicks = Rswift.StringResource(key: "body_chicks", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Alright Buddy?
       /// 
-      /// Locales: en, es
-      static let taunt_nine = Rswift.StringResource(key: "taunt_nine", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_nine = Rswift.StringResource(key: "taunt_nine", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Ask a player a question. They must respond with another question to the next person. First to fail, drink!
       /// 
-      /// Locales: en, es
-      static let body_questions = Rswift.StringResource(key: "body_questions", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_questions = Rswift.StringResource(key: "body_questions", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Bathroom Break
       /// 
-      /// Locales: en, es
-      static let dialog_pause_title = Rswift.StringResource(key: "dialog_pause_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let dialog_pause_title = Rswift.StringResource(key: "dialog_pause_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Be Awesome
       /// 
-      /// Locales: en, es
-      static let rate_button_awesome = Rswift.StringResource(key: "rate_button_awesome", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let rate_button_awesome = Rswift.StringResource(key: "rate_button_awesome", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Category
       /// 
-      /// Locales: en, es
-      static let header_category = Rswift.StringResource(key: "header_category", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_category = Rswift.StringResource(key: "header_category", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Chicks
       /// 
-      /// Locales: en, es
-      static let header_chicks = Rswift.StringResource(key: "header_chicks", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_chicks = Rswift.StringResource(key: "header_chicks", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Choose Language
       /// 
-      /// Locales: en, es
-      static let fragment_menu_language_title_choose_language = Rswift.StringResource(key: "fragment_menu_language_title_choose_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let fragment_menu_language_title_choose_language = Rswift.StringResource(key: "fragment_menu_language_title_choose_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Choose a category. Say something that fits until whoever can't think of any, drink!
       /// 
-      /// Locales: en, es
-      static let body_category = Rswift.StringResource(key: "body_category", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_category = Rswift.StringResource(key: "body_category", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Choose a mate And drink together!
       /// 
-      /// Locales: en, es
-      static let body_you = Rswift.StringResource(key: "body_you", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_you = Rswift.StringResource(key: "body_you", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Choose a partner and drink whenever that player drinks!
       /// 
-      /// Locales: en, es
-      static let body_mate = Rswift.StringResource(key: "body_mate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_mate = Rswift.StringResource(key: "body_mate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Come On
       /// 
-      /// Locales: en, es
-      static let taunt_ten = Rswift.StringResource(key: "taunt_ten", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_ten = Rswift.StringResource(key: "taunt_ten", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Coming Up
       /// 
-      /// Locales: en, es
-      static let taunt_two = Rswift.StringResource(key: "taunt_two", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_two = Rswift.StringResource(key: "taunt_two", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Complete the sentence, Never have I ever.. Anyone who has, drink!
       /// 
-      /// Locales: en, es
-      static let body_jack = Rswift.StringResource(key: "body_jack", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_jack = Rswift.StringResource(key: "body_jack", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Don't Think
       /// 
-      /// Locales: en, es
-      static let taunt_five = Rswift.StringResource(key: "taunt_five", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_five = Rswift.StringResource(key: "taunt_five", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Done
       /// 
-      /// Locales: en, es
-      static let preference_button_done = Rswift.StringResource(key: "preference_button_done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_button_done = Rswift.StringResource(key: "preference_button_done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Draw a King from the deck, you can choose any drinks to pour into the King's Cup. Person with the last King will have to finish the cup in one shot! Cheers mate.
       /// 
-      /// Locales: en, es
-      static let guide_page_three = Rswift.StringResource(key: "guide_page_three", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let guide_page_three = Rswift.StringResource(key: "guide_page_three", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Drink Me
       /// 
-      /// Locales: en, es
-      static let taunt_six = Rswift.StringResource(key: "taunt_six", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_six = Rswift.StringResource(key: "taunt_six", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Drink it up
       /// 
-      /// Locales: en, es
-      static let game_over_body = Rswift.StringResource(key: "game_over_body", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let game_over_body = Rswift.StringResource(key: "game_over_body", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Dudes
       /// 
-      /// Locales: en, es
-      static let header_dudes = Rswift.StringResource(key: "header_dudes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_dudes = Rswift.StringResource(key: "header_dudes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: English
       /// 
-      /// Locales: en, es
-      static let preference_current_language = Rswift.StringResource(key: "preference_current_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_current_language = Rswift.StringResource(key: "preference_current_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Everyone reach for the sky with both hands. Last player drinks!
       /// 
-      /// Locales: en, es
-      static let body_heaven = Rswift.StringResource(key: "body_heaven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_heaven = Rswift.StringResource(key: "body_heaven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Everyone starts drinking until the person who drew the card has stopped.
       /// 
-      /// Locales: en, es
-      static let body_waterfall = Rswift.StringResource(key: "body_waterfall", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_waterfall = Rswift.StringResource(key: "body_waterfall", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Faster Mate
       /// 
-      /// Locales: en, es
-      static let taunt_seven = Rswift.StringResource(key: "taunt_seven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_seven = Rswift.StringResource(key: "taunt_seven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Hearts and Kisses
       /// 
-      /// Locales: en, es
-      static let preference_title_credits_summary = Rswift.StringResource(key: "preference_title_credits_summary", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title_credits_summary = Rswift.StringResource(key: "preference_title_credits_summary", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Heaven
       /// 
-      /// Locales: en, es
-      static let header_heaven = Rswift.StringResource(key: "header_heaven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_heaven = Rswift.StringResource(key: "header_heaven", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Help Translate
       /// 
-      /// Locales: en, es
-      static let fragment_menu_language_btn_help_translate = Rswift.StringResource(key: "fragment_menu_language_btn_help_translate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let fragment_menu_language_btn_help_translate = Rswift.StringResource(key: "fragment_menu_language_btn_help_translate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Hey there
       /// 
-      /// Locales: en, es
-      static let rate_title = Rswift.StringResource(key: "rate_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let rate_title = Rswift.StringResource(key: "rate_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Hold my Beer
       /// 
-      /// Locales: en, es
-      static let load_type_new_game = Rswift.StringResource(key: "load_type_new_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let load_type_new_game = Rswift.StringResource(key: "load_type_new_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: It was not to get you out of your game.
       /// 
-      /// Locales: en, es
-      static let rate_paragraph_1 = Rswift.StringResource(key: "rate_paragraph_1", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let rate_paragraph_1 = Rswift.StringResource(key: "rate_paragraph_1", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Jack
       /// 
-      /// Locales: en, es
-      static let header_jack = Rswift.StringResource(key: "header_jack", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_jack = Rswift.StringResource(key: "header_jack", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Just One More
       /// 
-      /// Locales: en, es
-      static let taunt_three = Rswift.StringResource(key: "taunt_three", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_three = Rswift.StringResource(key: "taunt_three", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: King
       /// 
-      /// Locales: en, es
-      static let header_king = Rswift.StringResource(key: "header_king", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_king = Rswift.StringResource(key: "header_king", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: King's Cup
       /// 
-      /// Locales: en, es
-      static let app_name = Rswift.StringResource(key: "app_name", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let app_name = Rswift.StringResource(key: "app_name", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: King's Cup is designed, coded and created by a single person. Making each classification a great stimulus for me.
       /// 
-      /// Locales: en, es
-      static let rate_paragraph_2 = Rswift.StringResource(key: "rate_paragraph_2", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let rate_paragraph_2 = Rswift.StringResource(key: "rate_paragraph_2", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Language
       /// 
-      /// Locales: en, es
-      static let preference_title_language = Rswift.StringResource(key: "preference_title_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title_language = Rswift.StringResource(key: "preference_title_language", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Lets begin
       /// 
-      /// Locales: en, es
-      static let board_title_lets_begin = Rswift.StringResource(key: "board_title_lets_begin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let board_title_lets_begin = Rswift.StringResource(key: "board_title_lets_begin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Mate
       /// 
-      /// Locales: en, es
-      static let header_mate = Rswift.StringResource(key: "header_mate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_mate = Rswift.StringResource(key: "header_mate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Me
       /// 
-      /// Locales: en, es
-      static let header_me = Rswift.StringResource(key: "header_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_me = Rswift.StringResource(key: "header_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: More stuff from me
       /// 
-      /// Locales: en, es
-      static let fragment_support_rate_title_more_from_me = Rswift.StringResource(key: "fragment_support_rate_title_more_from_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let fragment_support_rate_title_more_from_me = Rswift.StringResource(key: "fragment_support_rate_title_more_from_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Nobody can make eye contact with you. If caught, drink!
       /// 
-      /// Locales: en, es
-      static let body_snake_eyes = Rswift.StringResource(key: "body_snake_eyes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_snake_eyes = Rswift.StringResource(key: "body_snake_eyes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Only you. Drink!
       /// 
-      /// Locales: en, es
-      static let body_me = Rswift.StringResource(key: "body_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_me = Rswift.StringResource(key: "body_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Pick a person to start the game, select a card and do what it says. There is no escape! Pass to the next person when you are done.
       /// 
-      /// Locales: en, es
-      static let guide_page_two = Rswift.StringResource(key: "guide_page_two", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let guide_page_two = Rswift.StringResource(key: "guide_page_two", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Place your thumb on the table. Last to do so, drinks!
       /// 
-      /// Locales: en, es
-      static let body_thumb_master = Rswift.StringResource(key: "body_thumb_master", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_thumb_master = Rswift.StringResource(key: "body_thumb_master", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Psst don't panic 🤫 I played this at a party and it's pretty awesome 🔥  King's Cup 🍺 No Beverages Included! https://play.google.com/store/apps/details?id=com.delacrixmorgan.kingscup
       /// 
-      /// Locales: en, es
-      static let preference_message_share_friend = Rswift.StringResource(key: "preference_message_share_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_message_share_friend = Rswift.StringResource(key: "preference_message_share_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Questions
       /// 
-      /// Locales: en, es
-      static let header_questions = Rswift.StringResource(key: "header_questions", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_questions = Rswift.StringResource(key: "header_questions", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Quick Guide
       /// 
-      /// Locales: en, es
-      static let preference_title_quick_guide = Rswift.StringResource(key: "preference_title_quick_guide", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title_quick_guide = Rswift.StringResource(key: "preference_title_quick_guide", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Quit
       /// 
-      /// Locales: en, es
-      static let dialog_pause_button_quit = Rswift.StringResource(key: "dialog_pause_button_quit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let dialog_pause_button_quit = Rswift.StringResource(key: "dialog_pause_button_quit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Resume
       /// 
-      /// Locales: en, es
-      static let dialog_pause_button_resume = Rswift.StringResource(key: "dialog_pause_button_resume", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let dialog_pause_button_resume = Rswift.StringResource(key: "dialog_pause_button_resume", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Seriously
       /// 
-      /// Locales: en, es
-      static let taunt_one = Rswift.StringResource(key: "taunt_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_one = Rswift.StringResource(key: "taunt_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Set a new rule. Fill the King's Cup!
       /// 
-      /// Locales: en, es
-      static let body_king = Rswift.StringResource(key: "body_king", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let body_king = Rswift.StringResource(key: "body_king", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Setting up New Game
       /// 
-      /// Locales: en, es
-      static let load_type_restart_game = Rswift.StringResource(key: "load_type_restart_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let load_type_restart_game = Rswift.StringResource(key: "load_type_restart_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Settings
       /// 
-      /// Locales: en, es
-      static let preference_title = Rswift.StringResource(key: "preference_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title = Rswift.StringResource(key: "preference_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Snake Eyes
       /// 
-      /// Locales: en, es
-      static let header_snake_eyes = Rswift.StringResource(key: "header_snake_eyes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_snake_eyes = Rswift.StringResource(key: "header_snake_eyes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Source Code
       /// 
-      /// Locales: en, es
-      static let preference_title_source_code = Rswift.StringResource(key: "preference_title_source_code", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title_source_code = Rswift.StringResource(key: "preference_title_source_code", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Tell a drinking buddy
       /// 
-      /// Locales: en, es
-      static let preference_title_share_friend = Rswift.StringResource(key: "preference_title_share_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let preference_title_share_friend = Rswift.StringResource(key: "preference_title_share_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: The well-being of this game rest entirely on your reviews. Have a great one mate!
       /// 
-      /// Locales: en, es
-      static let rate_paragraph_3 = Rswift.StringResource(key: "rate_paragraph_3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let rate_paragraph_3 = Rswift.StringResource(key: "rate_paragraph_3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: This Is It
       /// 
-      /// Locales: en, es
-      static let taunt_four = Rswift.StringResource(key: "taunt_four", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_four = Rswift.StringResource(key: "taunt_four", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Thumb Master
       /// 
-      /// Locales: en, es
-      static let header_thumb_master = Rswift.StringResource(key: "header_thumb_master", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_thumb_master = Rswift.StringResource(key: "header_thumb_master", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Waterfall
       /// 
-      /// Locales: en, es
-      static let header_waterfall = Rswift.StringResource(key: "header_waterfall", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_waterfall = Rswift.StringResource(key: "header_waterfall", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Yes, this a drinking game. Doesn't has to be alcoholic. Everyone must have their own drinking cup and place a cup in the middle to be the King's Cup.
       /// 
-      /// Locales: en, es
-      static let guide_page_one = Rswift.StringResource(key: "guide_page_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let guide_page_one = Rswift.StringResource(key: "guide_page_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: You
       /// 
-      /// Locales: en, es
-      static let header_you = Rswift.StringResource(key: "header_you", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let header_you = Rswift.StringResource(key: "header_you", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: You Sure?
       /// 
-      /// Locales: en, es
-      static let taunt_eight = Rswift.StringResource(key: "taunt_eight", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let taunt_eight = Rswift.StringResource(key: "taunt_eight", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       /// en translation: Zero Cluttered Currency Converter
       /// 
-      /// Locales: en, es
-      static let fragment_support_rate_description_squark = Rswift.StringResource(key: "fragment_support_rate_description_squark", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es"], comment: nil)
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
+      static let fragment_support_rate_description_squark = Rswift.StringResource(key: "fragment_support_rate_description_squark", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "es", "hu", "cs", "nl", "zh", "fi", "fr", "de", "pt-BR"], comment: nil)
       
       /// en translation: All guys drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_dudes(_: Void = ()) -> String {
         return NSLocalizedString("body_dudes", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: All ladies drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_chicks(_: Void = ()) -> String {
         return NSLocalizedString("body_chicks", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Alright Buddy?
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_nine(_: Void = ()) -> String {
         return NSLocalizedString("taunt_nine", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Ask a player a question. They must respond with another question to the next person. First to fail, drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_questions(_: Void = ()) -> String {
         return NSLocalizedString("body_questions", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Bathroom Break
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func dialog_pause_title(_: Void = ()) -> String {
         return NSLocalizedString("dialog_pause_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Be Awesome
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func rate_button_awesome(_: Void = ()) -> String {
         return NSLocalizedString("rate_button_awesome", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Category
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_category(_: Void = ()) -> String {
         return NSLocalizedString("header_category", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Chicks
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_chicks(_: Void = ()) -> String {
         return NSLocalizedString("header_chicks", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Choose Language
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func fragment_menu_language_title_choose_language(_: Void = ()) -> String {
         return NSLocalizedString("fragment_menu_language_title_choose_language", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Choose a category. Say something that fits until whoever can't think of any, drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_category(_: Void = ()) -> String {
         return NSLocalizedString("body_category", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Choose a mate And drink together!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_you(_: Void = ()) -> String {
         return NSLocalizedString("body_you", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Choose a partner and drink whenever that player drinks!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_mate(_: Void = ()) -> String {
         return NSLocalizedString("body_mate", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Come On
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_ten(_: Void = ()) -> String {
         return NSLocalizedString("taunt_ten", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Coming Up
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_two(_: Void = ()) -> String {
         return NSLocalizedString("taunt_two", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Complete the sentence, Never have I ever.. Anyone who has, drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_jack(_: Void = ()) -> String {
         return NSLocalizedString("body_jack", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Don't Think
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_five(_: Void = ()) -> String {
         return NSLocalizedString("taunt_five", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Done
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_button_done(_: Void = ()) -> String {
         return NSLocalizedString("preference_button_done", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Draw a King from the deck, you can choose any drinks to pour into the King's Cup. Person with the last King will have to finish the cup in one shot! Cheers mate.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func guide_page_three(_: Void = ()) -> String {
         return NSLocalizedString("guide_page_three", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Drink Me
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_six(_: Void = ()) -> String {
         return NSLocalizedString("taunt_six", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Drink it up
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func game_over_body(_: Void = ()) -> String {
         return NSLocalizedString("game_over_body", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Dudes
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_dudes(_: Void = ()) -> String {
         return NSLocalizedString("header_dudes", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: English
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_current_language(_: Void = ()) -> String {
         return NSLocalizedString("preference_current_language", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Everyone reach for the sky with both hands. Last player drinks!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_heaven(_: Void = ()) -> String {
         return NSLocalizedString("body_heaven", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Everyone starts drinking until the person who drew the card has stopped.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_waterfall(_: Void = ()) -> String {
         return NSLocalizedString("body_waterfall", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Faster Mate
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_seven(_: Void = ()) -> String {
         return NSLocalizedString("taunt_seven", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Hearts and Kisses
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title_credits_summary(_: Void = ()) -> String {
         return NSLocalizedString("preference_title_credits_summary", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Heaven
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_heaven(_: Void = ()) -> String {
         return NSLocalizedString("header_heaven", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Help Translate
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func fragment_menu_language_btn_help_translate(_: Void = ()) -> String {
         return NSLocalizedString("fragment_menu_language_btn_help_translate", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Hey there
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func rate_title(_: Void = ()) -> String {
         return NSLocalizedString("rate_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Hold my Beer
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func load_type_new_game(_: Void = ()) -> String {
         return NSLocalizedString("load_type_new_game", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: It was not to get you out of your game.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func rate_paragraph_1(_: Void = ()) -> String {
         return NSLocalizedString("rate_paragraph_1", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Jack
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_jack(_: Void = ()) -> String {
         return NSLocalizedString("header_jack", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Just One More
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_three(_: Void = ()) -> String {
         return NSLocalizedString("taunt_three", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: King
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_king(_: Void = ()) -> String {
         return NSLocalizedString("header_king", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: King's Cup
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func app_name(_: Void = ()) -> String {
         return NSLocalizedString("app_name", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: King's Cup is designed, coded and created by a single person. Making each classification a great stimulus for me.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func rate_paragraph_2(_: Void = ()) -> String {
         return NSLocalizedString("rate_paragraph_2", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Language
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title_language(_: Void = ()) -> String {
         return NSLocalizedString("preference_title_language", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Lets begin
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func board_title_lets_begin(_: Void = ()) -> String {
         return NSLocalizedString("board_title_lets_begin", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Mate
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_mate(_: Void = ()) -> String {
         return NSLocalizedString("header_mate", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Me
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_me(_: Void = ()) -> String {
         return NSLocalizedString("header_me", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: More stuff from me
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func fragment_support_rate_title_more_from_me(_: Void = ()) -> String {
         return NSLocalizedString("fragment_support_rate_title_more_from_me", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Nobody can make eye contact with you. If caught, drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_snake_eyes(_: Void = ()) -> String {
         return NSLocalizedString("body_snake_eyes", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Only you. Drink!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_me(_: Void = ()) -> String {
         return NSLocalizedString("body_me", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Pick a person to start the game, select a card and do what it says. There is no escape! Pass to the next person when you are done.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func guide_page_two(_: Void = ()) -> String {
         return NSLocalizedString("guide_page_two", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Place your thumb on the table. Last to do so, drinks!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_thumb_master(_: Void = ()) -> String {
         return NSLocalizedString("body_thumb_master", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Psst don't panic 🤫 I played this at a party and it's pretty awesome 🔥  King's Cup 🍺 No Beverages Included! https://play.google.com/store/apps/details?id=com.delacrixmorgan.kingscup
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_message_share_friend(_: Void = ()) -> String {
         return NSLocalizedString("preference_message_share_friend", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Questions
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_questions(_: Void = ()) -> String {
         return NSLocalizedString("header_questions", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Quick Guide
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title_quick_guide(_: Void = ()) -> String {
         return NSLocalizedString("preference_title_quick_guide", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Quit
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func dialog_pause_button_quit(_: Void = ()) -> String {
         return NSLocalizedString("dialog_pause_button_quit", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Resume
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func dialog_pause_button_resume(_: Void = ()) -> String {
         return NSLocalizedString("dialog_pause_button_resume", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Seriously
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_one(_: Void = ()) -> String {
         return NSLocalizedString("taunt_one", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Set a new rule. Fill the King's Cup!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func body_king(_: Void = ()) -> String {
         return NSLocalizedString("body_king", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Setting up New Game
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func load_type_restart_game(_: Void = ()) -> String {
         return NSLocalizedString("load_type_restart_game", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Settings
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title(_: Void = ()) -> String {
         return NSLocalizedString("preference_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Snake Eyes
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_snake_eyes(_: Void = ()) -> String {
         return NSLocalizedString("header_snake_eyes", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Source Code
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title_source_code(_: Void = ()) -> String {
         return NSLocalizedString("preference_title_source_code", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Tell a drinking buddy
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func preference_title_share_friend(_: Void = ()) -> String {
         return NSLocalizedString("preference_title_share_friend", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: The well-being of this game rest entirely on your reviews. Have a great one mate!
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func rate_paragraph_3(_: Void = ()) -> String {
         return NSLocalizedString("rate_paragraph_3", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: This Is It
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_four(_: Void = ()) -> String {
         return NSLocalizedString("taunt_four", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Thumb Master
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_thumb_master(_: Void = ()) -> String {
         return NSLocalizedString("header_thumb_master", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Waterfall
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_waterfall(_: Void = ()) -> String {
         return NSLocalizedString("header_waterfall", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Yes, this a drinking game. Doesn't has to be alcoholic. Everyone must have their own drinking cup and place a cup in the middle to be the King's Cup.
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func guide_page_one(_: Void = ()) -> String {
         return NSLocalizedString("guide_page_one", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: You
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func header_you(_: Void = ()) -> String {
         return NSLocalizedString("header_you", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: You Sure?
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func taunt_eight(_: Void = ()) -> String {
         return NSLocalizedString("taunt_eight", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Zero Cluttered Currency Converter
       /// 
-      /// Locales: en, es
+      /// Locales: en, es, hu, cs, nl, zh, fi, fr, de, pt-BR
       static func fragment_support_rate_description_squark(_: Void = ()) -> String {
         return NSLocalizedString("fragment_support_rate_description_squark", bundle: R.hostingBundle, comment: "")
       }

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13E500BF78A7E067730CDDF1 /* king.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E5005F92F8C3C132C00FE7 /* king.wav */; };
 		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
-		13E503865E21FEDC70CACD11 /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E50F5682D0C0E07E454DC3 /* game_over.wav */; };
-		13E508011C18C0A02913C937 /* oooh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E50758DA89857AE2FE185F /* oooh.wav */; };
 		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
-		13E50C0C203B86132C8B822F /* whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E508A92172F0D1CCF52465 /* whoosh.wav */; };
-		13E50C9EA5F1DD6E85E10272 /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13E505EA12C6FA1FB253FAAF /* flip.wav */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
-		151000DA22F3686C002456B5 /* league_spartan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151000D922F3686B002456B5 /* league_spartan.otf */; };
 		153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA09C22F6075000E32241 /* GuideViewController.swift */; };
 		155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
-		157567942300516400542E72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 157567962300516400542E72 /* Localizable.strings */; };
-		158ADFA6230060A3002361CE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ADFA5230060A3002361CE /* R.generated.swift */; };
-		1596636122F5D6B500047846 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 1596636022F5D6B500047846 /* confetti.json */; };
+		158ADFA823006806002361CE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ADFA5230060A3002361CE /* R.generated.swift */; };
+		158ADFC42300A128002361CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBA2300A128002361CE /* Localizable.strings */; };
+		158ADFC52300A128002361CE /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBD2300A128002361CE /* confetti.json */; };
+		158ADFC62300A128002361CE /* league_spartan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBE2300A128002361CE /* league_spartan.otf */; };
+		158ADFC72300A128002361CE /* king.wav in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBF2300A128002361CE /* king.wav */; };
+		158ADFC82300A128002361CE /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFC02300A128002361CE /* game_over.wav */; };
+		158ADFC92300A128002361CE /* whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFC12300A128002361CE /* whoosh.wav */; };
+		158ADFCA2300A128002361CE /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFC22300A128002361CE /* flip.wav */; };
+		158ADFCB2300A128002361CE /* oooh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFC32300A128002361CE /* oooh.wav */; };
 		15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A522EDE869002EAC7D /* AppDelegate.swift */; };
 		15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D182A722EDE869002EAC7D /* GameViewController.swift */; };
 		15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D182A922EDE869002EAC7D /* Main.storyboard */; };
@@ -86,29 +86,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		13E5005F92F8C3C132C00FE7 /* king.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = king.wav; sourceTree = "<group>"; };
 		13E501CA72D68584E38EB23C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		13E505EA12C6FA1FB253FAAF /* flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flip.wav; sourceTree = "<group>"; };
-		13E50758DA89857AE2FE185F /* oooh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oooh.wav; sourceTree = "<group>"; };
-		13E508A92172F0D1CCF52465 /* whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whoosh.wav; sourceTree = "<group>"; };
 		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
-		13E50F5682D0C0E07E454DC3 /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
-		151000D922F3686B002456B5 /* league_spartan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = league_spartan.otf; path = "../../../Downloads/King's Cup/Resources/font/league_spartan.otf"; sourceTree = "<group>"; };
+		150B75E123014B1E003A7D6C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E223014B2E003A7D6C /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E323014B53003A7D6C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E423014B90003A7D6C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E523014B9B003A7D6C /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E623014BA4003A7D6C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E723014BA9003A7D6C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		150B75E823014BAF003A7D6C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		153DA09C22F6075000E32241 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		157567952300516400542E72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		157567972300516800542E72 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		158ADFA5230060A3002361CE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		1596636022F5D6B500047846 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		158ADFBB2300A128002361CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		158ADFBC2300A128002361CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		158ADFBD2300A128002361CE /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		158ADFBE2300A128002361CE /* league_spartan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = league_spartan.otf; sourceTree = "<group>"; };
+		158ADFBF2300A128002361CE /* king.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = king.wav; sourceTree = "<group>"; };
+		158ADFC02300A128002361CE /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
+		158ADFC12300A128002361CE /* whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whoosh.wav; sourceTree = "<group>"; };
+		158ADFC22300A128002361CE /* flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flip.wav; sourceTree = "<group>"; };
+		158ADFC32300A128002361CE /* oooh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oooh.wav; sourceTree = "<group>"; };
 		15D182A222EDE869002EAC7D /* KingsCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingsCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182A522EDE869002EAC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D182A722EDE869002EAC7D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		15D182AA22EDE869002EAC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		15D182AC22EDE869002EAC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15D182AC22EDE869002EAC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		15D182AF22EDE869002EAC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		15D182B122EDE869002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D182B622EDE869002EAC7D /* KingsCupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsCupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D182BA22EDE869002EAC7D /* KingsCupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsCupUITests.swift; sourceTree = "<group>"; };
 		15D182BC22EDE869002EAC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +178,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158ADFB92300A128002361CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15D182AC22EDE869002EAC7D /* Assets.xcassets */,
+				158ADFBA2300A128002361CE /* Localizable.strings */,
+				158ADFBD2300A128002361CE /* confetti.json */,
+				158ADFBE2300A128002361CE /* league_spartan.otf */,
+				158ADFBF2300A128002361CE /* king.wav */,
+				158ADFC02300A128002361CE /* game_over.wav */,
+				158ADFC12300A128002361CE /* whoosh.wav */,
+				158ADFC22300A128002361CE /* flip.wav */,
+				158ADFC32300A128002361CE /* oooh.wav */,
+				158ADFA5230060A3002361CE /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		15D1829922EDE869002EAC7D = {
 			isa = PBXGroup;
 			children = (
@@ -205,18 +229,8 @@
 				15D182A722EDE869002EAC7D /* GameViewController.swift */,
 				15F76F8F22EE3AAA00C92754 /* CardCell.swift */,
 				1560CE1322EF77B900943017 /* CardViewController.swift */,
-				15D182AC22EDE869002EAC7D /* Assets.xcassets */,
 				15D182AE22EDE869002EAC7D /* LaunchScreen.storyboard */,
-				15D182B122EDE869002EAC7D /* Info.plist */,
-				151000D922F3686B002456B5 /* league_spartan.otf */,
-				1596636022F5D6B500047846 /* confetti.json */,
-				13E508A92172F0D1CCF52465 /* whoosh.wav */,
-				13E50758DA89857AE2FE185F /* oooh.wav */,
-				13E505EA12C6FA1FB253FAAF /* flip.wav */,
-				13E5005F92F8C3C132C00FE7 /* king.wav */,
-				13E50F5682D0C0E07E454DC3 /* game_over.wav */,
-				157567962300516400542E72 /* Localizable.strings */,
-				158ADFA5230060A3002361CE /* R.generated.swift */,
+				158ADFB92300A128002361CE /* Resources */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -404,6 +418,14 @@
 				en,
 				Base,
 				es,
+				hu,
+				cs,
+				nl,
+				zh,
+				fi,
+				fr,
+				de,
+				"pt-BR",
 			);
 			mainGroup = 15D1829922EDE869002EAC7D;
 			productRefGroup = 15D182A322EDE869002EAC7D /* Products */;
@@ -423,17 +445,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1596636122F5D6B500047846 /* confetti.json in Resources */,
-				151000DA22F3686C002456B5 /* league_spartan.otf in Resources */,
-				157567942300516400542E72 /* Localizable.strings in Resources */,
+				158ADFC52300A128002361CE /* confetti.json in Resources */,
+				158ADFC82300A128002361CE /* game_over.wav in Resources */,
 				15D182B022EDE869002EAC7D /* LaunchScreen.storyboard in Resources */,
+				158ADFCA2300A128002361CE /* flip.wav in Resources */,
 				15D182AD22EDE869002EAC7D /* Assets.xcassets in Resources */,
 				15D182AB22EDE869002EAC7D /* Main.storyboard in Resources */,
-				13E50C0C203B86132C8B822F /* whoosh.wav in Resources */,
-				13E508011C18C0A02913C937 /* oooh.wav in Resources */,
-				13E50C9EA5F1DD6E85E10272 /* flip.wav in Resources */,
-				13E500BF78A7E067730CDDF1 /* king.wav in Resources */,
-				13E503865E21FEDC70CACD11 /* game_over.wav in Resources */,
+				158ADFC72300A128002361CE /* king.wav in Resources */,
+				158ADFC42300A128002361CE /* Localizable.strings in Resources */,
+				158ADFC92300A128002361CE /* whoosh.wav in Resources */,
+				158ADFC62300A128002361CE /* league_spartan.otf in Resources */,
+				158ADFCB2300A128002361CE /* oooh.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,7 +616,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */,
-				158ADFA6230060A3002361CE /* R.generated.swift in Sources */,
+				158ADFA823006806002361CE /* R.generated.swift in Sources */,
 				1560CE1422EF77B900943017 /* CardViewController.swift in Sources */,
 				15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */,
 				15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */,
@@ -655,11 +677,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		157567962300516400542E72 /* Localizable.strings */ = {
+		158ADFBA2300A128002361CE /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				157567952300516400542E72 /* en */,
-				157567972300516800542E72 /* es */,
+				158ADFBB2300A128002361CE /* en */,
+				158ADFBC2300A128002361CE /* es */,
+				150B75E123014B1E003A7D6C /* hu */,
+				150B75E223014B2E003A7D6C /* cs */,
+				150B75E323014B53003A7D6C /* nl */,
+				150B75E423014B90003A7D6C /* zh */,
+				150B75E523014B9B003A7D6C /* fi */,
+				150B75E623014BA4003A7D6C /* fr */,
+				150B75E723014BA9003A7D6C /* de */,
+				150B75E823014BAF003A7D6C /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
