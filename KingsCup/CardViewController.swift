@@ -26,11 +26,11 @@ class CardViewController: UIViewController {
             actionTypeTitleLabel.text = card?.actionType.title.uppercased()
             actionTypeBodyLabel.text = card?.actionType.body
 
-            tintedSuitImageView.setImageColor(color: UIColor(named: "PrimaryColor") ?? .black)
+            tintedSuitImageView.setImageColor(color: R.color.primaryColor()!)
 
             if card?.isKing ?? false {
-                let fileURL = Bundle.main.path(forResource: "oooh", ofType: "wav")!
-                self.ooohSoundEngine = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                let fileURL = R.file.ooohWav()!
+                self.ooohSoundEngine = try! AVAudioPlayer(contentsOf: fileURL)
                 self.ooohSoundEngine!.play()
             }
         }

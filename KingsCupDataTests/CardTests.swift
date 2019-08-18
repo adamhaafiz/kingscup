@@ -14,7 +14,7 @@ class CardTests: XCTestCase {
         let sut = Card(suitType: .hearts, actionType: .king)
 
         XCTAssert(sut.suitType == .hearts)
-        XCTAssert(sut.rank == "1")
+        XCTAssert(sut.rank == "K")
         XCTAssert(sut.actionType == .king)
     }
 
@@ -27,6 +27,6 @@ class CardTests: XCTestCase {
     func testCard_givenJackRank_shouldReturnIsNotKing() {
         let sut = Card(suitType: .clubs, actionType: .jack)
 
-        XCTAssertFakse(sut.isKing)
+        XCTAssertFalse(sut.isKing)
     }
 }

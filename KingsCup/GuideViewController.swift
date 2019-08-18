@@ -17,15 +17,18 @@ class GuideViewController: UIPageViewController, UIPageViewControllerDelegate, U
         delegate = self
         dataSource = self
 
-        let pageOne = storyboard!.instantiateViewController(withIdentifier: "GuideOne")
-        let pageTwo = storyboard!.instantiateViewController(withIdentifier: "GuideTwo")
-        let pageThree = storyboard!.instantiateViewController(withIdentifier: "GuideThree")
+        let pageOne = R.storyboard.main.guidePageViewController()!
+        pageOne.configure(body: R.string.localizable.guide_page_one())
+        let pageTwo = R.storyboard.main.guidePageViewController()!
+        pageTwo.configure(body: R.string.localizable.guide_page_two())
+        let pageThree = R.storyboard.main.guidePageViewController()!
+        pageThree.configure(body: R.string.localizable.guide_page_three())
 
         setViewControllers([pageOne], direction: .forward, animated: true)
         pages = [pageOne, pageTwo, pageThree]
 
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "ic_arrow_back"), for: .normal)
+        button.setImage(R.image.ic_arrow_back(), for: .normal)
         button.backgroundColor = .white
         button.layer.cornerRadius = 32
         button.layer.masksToBounds = true
