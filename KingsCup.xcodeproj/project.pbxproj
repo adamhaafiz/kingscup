@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
 		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
+		13E50B263DE90E1254988B19 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E509AAC8020098D2ABD6D5 /* GuidePageViewController.swift */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
+		152CA42023098974000BBC2C /* Data+R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CA41F23098974000BBC2C /* Data+R.swift */; };
 		153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA09C22F6075000E32241 /* GuideViewController.swift */; };
 		155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
@@ -87,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		13E501CA72D68584E38EB23C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		13E509AAC8020098D2ABD6D5 /* GuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
 		13E50A89DFD151D8C3CCC7F9 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		13E50DB06ED20C3A6F80329F /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
 		150B75E123014B1E003A7D6C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		150B75E623014BA4003A7D6C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		150B75E723014BA9003A7D6C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		150B75E823014BAF003A7D6C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		152CA41F23098974000BBC2C /* Data+R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+R.swift"; sourceTree = "<group>"; };
 		153DA09C22F6075000E32241 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 				158ADFC22300A128002361CE /* flip.wav */,
 				158ADFC32300A128002361CE /* oooh.wav */,
 				158ADFA5230060A3002361CE /* R.generated.swift */,
+				152CA41F23098974000BBC2C /* Data+R.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				1560CE1322EF77B900943017 /* CardViewController.swift */,
 				15D182AE22EDE869002EAC7D /* LaunchScreen.storyboard */,
 				158ADFB92300A128002361CE /* Resources */,
+				13E509AAC8020098D2ABD6D5 /* GuidePageViewController.swift */,
 			);
 			path = KingsCup;
 			sourceTree = "<group>";
@@ -352,9 +358,9 @@
 			buildPhases = (
 				292C4D080B5F1F5291CF3ADE /* [CP] Check Pods Manifest.lock */,
 				15D182C522EDE894002EAC7D /* Headers */,
+				15D182C822EDE894002EAC7D /* Resources */,
 				15D182C622EDE894002EAC7D /* Sources */,
 				15D182C722EDE894002EAC7D /* Frameworks */,
-				15D182C822EDE894002EAC7D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -621,7 +627,9 @@
 				15D182A822EDE869002EAC7D /* GameViewController.swift in Sources */,
 				15D182A622EDE869002EAC7D /* AppDelegate.swift in Sources */,
 				15F76F9022EE3AAA00C92754 /* CardCell.swift in Sources */,
+				152CA42023098974000BBC2C /* Data+R.swift in Sources */,
 				153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */,
+				13E50B263DE90E1254988B19 /* GuidePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +848,7 @@
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KingsCup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -862,6 +871,7 @@
 				DEVELOPMENT_TEAM = 59LE6JR5WB;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KingsCup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

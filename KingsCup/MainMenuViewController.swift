@@ -20,16 +20,4 @@ class MainMenuViewController: UIViewController {
         startButton.setTitle(R.string.localizable.board_title_lets_begin().uppercased(), for: .normal)
         guideButton.setTitle(R.string.localizable.preference_title_quick_guide(), for: .normal)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

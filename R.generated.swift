@@ -1032,25 +1032,15 @@ struct _R: Rswift.Validatable {
       
       let bundle = R.hostingBundle
       let cardViewController = StoryboardViewControllerResource<CardViewController>(identifier: "CardViewController")
-      let guideOne = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "GuideOne")
-      let guideThree = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "GuideThree")
-      let guideTwo = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "GuideTwo")
+      let guidePageViewController = StoryboardViewControllerResource<GuidePageViewController>(identifier: "GuidePageViewController")
       let name = "Main"
       
       func cardViewController(_: Void = ()) -> CardViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: cardViewController)
       }
       
-      func guideOne(_: Void = ()) -> UIKit.UIViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: guideOne)
-      }
-      
-      func guideThree(_: Void = ()) -> UIKit.UIViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: guideThree)
-      }
-      
-      func guideTwo(_: Void = ()) -> UIKit.UIViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: guideTwo)
+      func guidePageViewController(_: Void = ()) -> GuidePageViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: guidePageViewController)
       }
       
       static func validate() throws {
@@ -1067,9 +1057,7 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "PrimaryDarkColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'PrimaryDarkColor' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().cardViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'cardViewController' could not be loaded from storyboard 'Main' as 'CardViewController'.") }
-        if _R.storyboard.main().guideOne() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'guideOne' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
-        if _R.storyboard.main().guideThree() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'guideThree' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
-        if _R.storyboard.main().guideTwo() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'guideTwo' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
+        if _R.storyboard.main().guidePageViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'guidePageViewController' could not be loaded from storyboard 'Main' as 'GuidePageViewController'.") }
       }
       
       fileprivate init() {}
