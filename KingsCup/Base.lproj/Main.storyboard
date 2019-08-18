@@ -29,13 +29,13 @@
                                 <color key="backgroundColor" name="AccentColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rlF-Ae-AOM">
-                                <rect key="frame" x="115" y="205" width="184" height="262"/>
+                                <rect key="frame" x="121.5" y="302.5" width="171.5" height="67"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-Jw-n9H">
-                                        <rect key="frame" x="27.5" y="0.0" width="129" height="208.50000000000006"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="16" height="16"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-NE-RMa">
-                                        <rect key="frame" x="0.0" y="224.5" width="184" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="32" width="171.5" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwa-dn-FSe">
-                                <rect key="frame" x="149" y="636" width="116" height="72"/>
+                                <rect key="frame" x="151" y="637" width="112" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTV-Mz-dGu">
-                                <rect key="frame" x="149" y="724" width="116" height="72"/>
+                                <rect key="frame" x="151" y="723" width="112" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
@@ -204,17 +204,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-iW-ha5">
-                                                    <rect key="frame" x="-7.5" y="58" width="135" height="84.5"/>
+                                                    <rect key="frame" x="-3" y="58.5" width="126" height="83"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-vi-wCj">
-                                                            <rect key="frame" x="52.5" y="0.0" width="30" height="45.000000000000057"/>
+                                                            <rect key="frame" x="48" y="0.0" width="30" height="45"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="6JH-rh-ew4"/>
                                                                 <constraint firstAttribute="width" constant="30" id="epe-mX-meN"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
-                                                            <rect key="frame" x="0.0" y="57" width="135" height="27.5"/>
+                                                            <rect key="frame" x="0.0" y="57" width="126" height="26"/>
                                                             <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -337,19 +337,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_accent" translatesAutoresizingMaskIntoConstraints="NO" id="XLW-e8-a5E">
-                                <rect key="frame" x="0.0" y="542" width="414.00000000000011" height="354"/>
+                                <rect key="frame" x="0.0" y="880" width="414" height="16"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-PO-dK9">
-                                <rect key="frame" x="8" y="52" width="44" height="81.5"/>
+                                <rect key="frame" x="8" y="52" width="44" height="79"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84l-xk-llg">
-                                        <rect key="frame" x="15" y="0.0" width="14.5" height="37.5"/>
+                                        <rect key="frame" x="14" y="0.0" width="16" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="i6J-ua-5Tc">
-                                        <rect key="frame" x="0.0" y="37.5" width="44" height="44"/>
+                                        <rect key="frame" x="0.0" y="35" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="pWd-KY-a4G"/>
                                             <constraint firstAttribute="height" constant="44" id="xiw-8f-WZZ"/>
@@ -358,7 +358,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JA6-rx-6DP">
-                                <rect key="frame" x="362" y="772.5" width="44" height="81.5"/>
+                                <rect key="frame" x="362" y="775" width="44" height="79"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="jym-CW-Uic">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -368,7 +368,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKY-mD-dnN">
-                                        <rect key="frame" x="15" y="44" width="14.5" height="37.5"/>
+                                        <rect key="frame" x="14" y="44" width="16" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" name="PrimaryColor"/>
                                         <nil key="highlightedColor"/>
@@ -376,7 +376,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-3c-jL6">
-                                <rect key="frame" x="64" y="227" width="286" height="442.5"/>
+                                <rect key="frame" x="64" y="234" width="286" height="428"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="7He-UB-z0N">
                                         <rect key="frame" x="47" y="0.0" width="192" height="192"/>
@@ -386,19 +386,19 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-Iv-BPl">
-                                        <rect key="frame" x="101.5" y="208" width="83" height="37.5"/>
+                                        <rect key="frame" x="104.5" y="208" width="77" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never have I ever.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1p-4G-qwd">
-                                        <rect key="frame" x="54.5" y="261.5" width="177" height="22.5"/>
+                                        <rect key="frame" x="69" y="259" width="148.5" height="21"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMP-dV-Gmh">
-                                        <rect key="frame" x="143" y="300" width="0.0" height="32"/>
+                                        <rect key="frame" x="143" y="296" width="0.0" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" id="8BA-2q-aMR"/>
@@ -406,7 +406,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv4-VE-XZ0">
-                                        <rect key="frame" x="96" y="348" width="94.5" height="94.5"/>
+                                        <rect key="frame" x="102" y="344" width="82" height="84"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="33" minY="33" maxX="33" maxY="33"/>
                                         <state key="normal" image="checked"/>

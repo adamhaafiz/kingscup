@@ -154,6 +154,10 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
 
         #if DEBUG
         cell.debugLabel.text = "\(game.cards[indexPath.item].rank) \(game.cards[indexPath.item].suitType.rawValue)"
+
+        if ProcessInfo.processInfo.arguments.contains("UITests") {
+            cell.debugLabel.alpha = 0.001
+        }
         #endif
 
         return cell

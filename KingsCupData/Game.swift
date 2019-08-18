@@ -21,7 +21,11 @@ public struct Game {
             }
         }
 
-        cards = newCards.shuffled()
+        if ProcessInfo.processInfo.arguments.contains("UITests") {
+            cards = newCards
+        } else {
+            cards = newCards.shuffled()
+        }
     }
 
     mutating public func remove(card: Card) {

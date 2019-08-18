@@ -19,5 +19,8 @@ class MainMenuViewController: UIViewController {
         titleLabel.text = R.string.localizable.app_name()
         startButton.setTitle(R.string.localizable.board_title_lets_begin().uppercased(), for: .normal)
         guideButton.setTitle(R.string.localizable.preference_title_quick_guide(), for: .normal)
+
+        startButton.accessibilityIdentifier = "MainMenuStartButton"
+        guideButton.accessibilityIdentifier = "MainMenuGuideButton"
     }
 }
