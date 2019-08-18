@@ -9,11 +9,11 @@ target 'KingsCup' do
   pod 'R.swift', '~> 5.0'
   pod 'lottie-ios', '~> 3.1'
 
-  target 'KingsCupUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+end
 
+target 'KingsCupUITests' do
+  inherit! :search_paths
+  # Pods for testing
 end
 
 target 'KingsCupData' do
