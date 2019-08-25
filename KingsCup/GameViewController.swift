@@ -39,7 +39,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        statusLabel.text = R.string.localizable.board_title_lets_begin()
+        statusLabel.text = R.string.localizable.board_title_lets_begin().uppercased()
 
         if kingSoundEngine == nil {
             let fileURL = R.file.kingWav()!
