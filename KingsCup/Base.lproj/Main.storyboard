@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IqP-KH-Y2o">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
+    <device id="ipad12_9rounded" orientation="landscape">
+        <adaptation id="splitview1_2"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -21,20 +21,20 @@
             <objects>
                 <viewController title=" " id="dDC-S2-FGw" customClass="MainMenuViewController" customModule="KingsCup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NX9-YJ-1sz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="678" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iz0-xc-kFB">
-                                <rect key="frame" x="0.0" y="426" width="320" height="142"/>
+                                <rect key="frame" x="0.0" y="768" width="678" height="256"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rlF-Ae-AOM">
-                                <rect key="frame" x="74.5" y="179.5" width="171.5" height="67"/>
+                                <rect key="frame" x="253.5" y="350.5" width="171.5" height="67"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingscup_logo_no_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-Jw-n9H">
                                         <rect key="frame" x="77.5" y="0.0" width="16" height="16"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-NE-RMa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-NE-RMa">
                                         <rect key="frame" x="0.0" y="32" width="171.5" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwa-dn-FSe">
-                                <rect key="frame" x="104" y="391" width="112" height="70"/>
+                                <rect key="frame" x="283" y="733" width="112" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTV-Mz-dGu">
-                                <rect key="frame" x="104" y="477" width="112" height="70"/>
+                                <rect key="frame" x="283" y="819" width="112" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
@@ -81,6 +81,7 @@
                         </subviews>
                         <color key="backgroundColor" name="PrimaryColor"/>
                         <constraints>
+                            <constraint firstItem="Rwa-dn-FSe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jPZ-49-Jjl" secondAttribute="leading" constant="32" id="7PX-4x-CfF"/>
                             <constraint firstItem="rlF-Ae-AOM" firstAttribute="centerX" secondItem="NX9-YJ-1sz" secondAttribute="centerX" id="Aws-0O-hwX"/>
                             <constraint firstItem="Rwa-dn-FSe" firstAttribute="centerY" secondItem="iz0-xc-kFB" secondAttribute="top" id="COL-1h-RJp"/>
                             <constraint firstAttribute="bottom" secondItem="iz0-xc-kFB" secondAttribute="bottom" id="DCU-db-qOJ"/>
@@ -91,6 +92,9 @@
                             <constraint firstItem="iz0-xc-kFB" firstAttribute="leading" secondItem="NX9-YJ-1sz" secondAttribute="leading" id="aXT-is-VGk"/>
                             <constraint firstItem="rlF-Ae-AOM" firstAttribute="centerY" secondItem="NX9-YJ-1sz" secondAttribute="centerY" multiplier="0.75" id="kbp-yz-3ME"/>
                             <constraint firstItem="VTV-Mz-dGu" firstAttribute="centerX" secondItem="Rwa-dn-FSe" secondAttribute="centerX" id="lx0-27-hvE"/>
+                            <constraint firstItem="rlF-Ae-AOM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jPZ-49-Jjl" secondAttribute="leading" constant="32" id="nGT-0L-4vv"/>
+                            <constraint firstItem="jPZ-49-Jjl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rlF-Ae-AOM" secondAttribute="trailing" constant="32" id="plK-NX-1uJ"/>
+                            <constraint firstItem="jPZ-49-Jjl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rwa-dn-FSe" secondAttribute="trailing" constant="32" id="pmF-NV-JyC"/>
                             <constraint firstItem="iz0-xc-kFB" firstAttribute="height" secondItem="NX9-YJ-1sz" secondAttribute="height" multiplier="0.25" id="zfj-Xn-b0r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jPZ-49-Jjl"/>
@@ -119,14 +123,14 @@
             <objects>
                 <viewController storyboardIdentifier="GuidePageViewController" id="nMu-4X-wPf" customClass="GuidePageViewController" customModule="KingsCup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vPB-96-iZj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="678" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-Yf-sTR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+                                <rect key="frame" x="0.0" y="0.0" width="678" height="409.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUICK GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wi-mk-fTt">
-                                        <rect key="frame" x="84" y="99.5" width="152" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUICK GUIDE QUICK GUIDE QUICK GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wi-mk-fTt">
+                                        <rect key="frame" x="105.5" y="211.5" width="467.5" height="27.5"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -134,13 +138,15 @@
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstItem="4wi-mk-fTt" firstAttribute="centerY" secondItem="jjS-Yf-sTR" secondAttribute="centerY" id="2Rq-Kh-y6e"/>
+                                    <constraint firstItem="4wi-mk-fTt" firstAttribute="centerY" secondItem="jjS-Yf-sTR" secondAttribute="centerY" multiplier="1.1" id="2Rq-Kh-y6e"/>
                                     <constraint firstItem="4wi-mk-fTt" firstAttribute="centerX" secondItem="jjS-Yf-sTR" secondAttribute="centerX" id="ISk-ef-9ci"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4wi-mk-fTt" secondAttribute="trailing" constant="32" id="cfn-ys-vQc"/>
+                                    <constraint firstItem="4wi-mk-fTt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jjS-Yf-sTR" secondAttribute="leading" constant="32" id="fL1-7c-cch"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALE-TU-pK0">
-                                <rect key="frame" x="38.5" y="296.5" width="243.5" height="202.5"/>
-                                <string key="text">Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALE-TU-pK0">
+                                <rect key="frame" x="130" y="593" width="418.5" height="247.5"/>
+                                <mutableString key="text">Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup. Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup.</mutableString>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -149,6 +155,7 @@
                         <color key="backgroundColor" name="PrimaryColor"/>
                         <constraints>
                             <constraint firstItem="jjS-Yf-sTR" firstAttribute="leading" secondItem="WjY-bA-fpQ" secondAttribute="leading" id="4rd-GZ-chs"/>
+                            <constraint firstItem="ALE-TU-pK0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jjS-Yf-sTR" secondAttribute="bottom" constant="32" id="4yH-b5-gAI"/>
                             <constraint firstItem="ALE-TU-pK0" firstAttribute="centerX" secondItem="vPB-96-iZj" secondAttribute="centerX" id="8u1-Hq-u8o"/>
                             <constraint firstItem="jjS-Yf-sTR" firstAttribute="height" secondItem="vPB-96-iZj" secondAttribute="height" multiplier="0.4" id="JBj-EM-IXo"/>
                             <constraint firstItem="jjS-Yf-sTR" firstAttribute="top" secondItem="vPB-96-iZj" secondAttribute="top" id="LE7-Zp-6pH"/>
@@ -156,6 +163,7 @@
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>
                             <constraint firstItem="ALE-TU-pK0" firstAttribute="centerY" secondItem="vPB-96-iZj" secondAttribute="centerY" multiplier="1.4" id="TT3-8w-jMp"/>
+                            <constraint firstItem="WjY-bA-fpQ" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ALE-TU-pK0" secondAttribute="bottom" constant="32" id="eOR-yf-XMD"/>
                             <constraint firstItem="jjS-Yf-sTR" firstAttribute="trailing" secondItem="WjY-bA-fpQ" secondAttribute="trailing" id="l1l-fZ-rkf"/>
                             <constraint firstItem="ALE-TU-pK0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vPB-96-iZj" secondAttribute="leading" constant="128" id="xvy-dZ-X4c">
                                 <variation key="widthClass=compact" constant="32"/>
@@ -177,15 +185,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="KingsCup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="678" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icD-AB-io5">
-                                <rect key="frame" x="0.0" y="426" width="320" height="142"/>
+                                <rect key="frame" x="0.0" y="768" width="678" height="256"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-VU-o15">
-                                <rect key="frame" x="0.0" y="370.5" width="320" height="189.5"/>
+                                <rect key="frame" x="0.0" y="654.5" width="678" height="341.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Chk-kY-KcM">
                                     <size key="itemSize" width="120" height="200"/>
@@ -217,7 +225,7 @@
                                                                 <constraint firstAttribute="width" constant="30" id="epe-mX-meN"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KING'S CUP KING'S CUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-LP-knH">
                                                             <rect key="frame" x="0.0" y="57" width="104" height="26"/>
                                                             <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -244,6 +252,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="debugLabel" destination="nCm-1a-v4f" id="awg-ZU-mSX"/>
+                                            <outlet property="titleLabel" destination="lHh-LP-knH" id="Sr8-fM-Sya"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -253,31 +262,31 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iND-Lu-qFh">
-                                <rect key="frame" x="16" y="20" width="160" height="84.5"/>
+                                <rect key="frame" x="16" y="24" width="339" height="84.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-GU-ntL">
-                                        <rect key="frame" x="0.0" y="0.0" width="37" height="84.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="84.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="5Jv-yB-LGM">
-                                        <rect key="frame" x="41" y="0.0" width="37" height="84.5"/>
+                                        <rect key="frame" x="88" y="0.0" width="75.5" height="84.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="TfG-Ia-CXm">
-                                        <rect key="frame" x="82" y="0.0" width="37" height="84.5"/>
+                                        <rect key="frame" x="175.5" y="0.0" width="76" height="84.5"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="qMz-zY-Sk5">
-                                        <rect key="frame" x="123" y="0.0" width="37" height="84.5"/>
+                                        <rect key="frame" x="263.5" y="0.0" width="75.5" height="84.5"/>
                                     </imageView>
                                 </subviews>
                                 <variation key="widthClass=compact" spacing="4"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-c9-hPB">
-                                <rect key="frame" x="86" y="123.5" width="148.5" height="179"/>
+                                <rect key="frame" x="110" y="294.5" width="458.5" height="179"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup_volume_4" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-YI-MiL">
-                                        <rect key="frame" x="9.5" y="0.0" width="129" height="133"/>
+                                        <rect key="frame" x="164.5" y="0.0" width="129" height="133"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S BEGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-tk-Wjr">
-                                        <rect key="frame" x="0.0" y="149" width="148.5" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S BEGIN LET'S BEGIN LET'S BEGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-tk-Wjr">
+                                        <rect key="frame" x="0.0" y="149" width="458.5" height="30"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -285,7 +294,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxW-E5-qKR">
-                                <rect key="frame" x="246" y="28" width="66" height="66"/>
+                                <rect key="frame" x="604" y="32" width="66" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SxW-E5-qKR" secondAttribute="height" multiplier="1:1" id="7Hz-Az-0Sy"/>
@@ -306,8 +315,10 @@
                         </subviews>
                         <color key="backgroundColor" name="PrimaryDarkColor"/>
                         <constraints>
+                            <constraint firstItem="cJJ-c9-hPB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="8il-gF-SYX"/>
                             <constraint firstItem="icD-AB-io5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="DcN-9H-t0G"/>
                             <constraint firstItem="mLh-VU-o15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dkn-Fp-DoI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cJJ-c9-hPB" secondAttribute="trailing" constant="32" id="EqM-tr-KhB"/>
                             <constraint firstItem="iND-Lu-qFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ii7-cL-gpY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mLh-VU-o15" secondAttribute="bottom" constant="8" id="LdY-nG-w77"/>
                             <constraint firstItem="mLh-VU-o15" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1001/3000" id="OiH-jZ-SF6"/>
@@ -340,14 +351,14 @@
             <objects>
                 <viewController storyboardIdentifier="CardViewController" id="ecy-Of-q1T" customClass="CardViewController" customModule="KingsCup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfp-P5-wCa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="678" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_accent" translatesAutoresizingMaskIntoConstraints="NO" id="XLW-e8-a5E">
-                                <rect key="frame" x="0.0" y="552" width="320" height="16"/>
+                                <rect key="frame" x="0.0" y="1008" width="678" height="16"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-PO-dK9">
-                                <rect key="frame" x="8" y="28" width="44" height="79"/>
+                                <rect key="frame" x="8" y="32" width="44" height="79"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84l-xk-llg">
                                         <rect key="frame" x="14" y="0.0" width="16" height="35"/>
@@ -365,7 +376,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JA6-rx-6DP">
-                                <rect key="frame" x="268" y="481" width="44" height="79"/>
+                                <rect key="frame" x="626" y="917" width="44" height="79"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="jym-CW-Uic">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -383,10 +394,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-3c-jL6">
-                                <rect key="frame" x="86" y="114" width="148.5" height="340"/>
+                                <rect key="frame" x="128" y="256" width="422" height="512"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="7He-UB-z0N">
-                                        <rect key="frame" x="10" y="0.0" width="128" height="128"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" image="clubs" translatesAutoresizingMaskIntoConstraints="NO" id="7He-UB-z0N">
+                                        <rect key="frame" x="115" y="0.0" width="192" height="192"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="192" id="Jjp-dp-kgi">
                                                 <variation key="widthClass=compact" constant="128"/>
@@ -396,20 +407,21 @@
                                             </constraint>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-Iv-BPl">
-                                        <rect key="frame" x="35.5" y="144" width="77" height="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THUMB MASTER THUMB MASTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-Iv-BPl">
+                                        <rect key="frame" x="0.0" y="208" width="422" height="35"/>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never have I ever.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1p-4G-qwd">
-                                        <rect key="frame" x="0.0" y="195" width="148.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i1p-4G-qwd">
+                                        <rect key="frame" x="7.5" y="259" width="407.5" height="105"/>
+                                        <string key="text">Ask a player a question. They must respond with another question to the next person. First to fail, drink! Ask a player a question. They must respond with another question to the next person. First to fail, drink!</string>
                                         <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMP-dV-Gmh">
-                                        <rect key="frame" x="74" y="232" width="0.0" height="8"/>
+                                        <rect key="frame" x="211" y="380" width="0.0" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" id="8BA-2q-aMR"/>
@@ -418,8 +430,8 @@
                                             </constraint>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv4-VE-XZ0">
-                                        <rect key="frame" x="33" y="256" width="82" height="84"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv4-VE-XZ0">
+                                        <rect key="frame" x="170" y="428" width="82" height="84"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="33" minY="33" maxX="33" maxY="33"/>
                                         <state key="normal" image="checked"/>
@@ -443,7 +455,7 @@
                             <constraint firstItem="XLW-e8-a5E" firstAttribute="width" secondItem="rfp-P5-wCa" secondAttribute="width" id="Eij-9t-2Tg"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="centerX" secondItem="rfp-P5-wCa" secondAttribute="centerX" id="JDV-Yq-Ho7"/>
                             <constraint firstItem="JA6-rx-6DP" firstAttribute="bottom" secondItem="lpe-1A-Ub3" secondAttribute="bottom" constant="-8" id="LPx-E5-cJF"/>
-                            <constraint firstItem="iKQ-3c-jL6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lpe-1A-Ub3" secondAttribute="top" constant="32" id="NGc-Cq-aSc"/>
+                            <constraint firstItem="iKQ-3c-jL6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lpe-1A-Ub3" secondAttribute="top" constant="16" id="NGc-Cq-aSc"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lpe-1A-Ub3" secondAttribute="leading" constant="128" id="NsZ-lU-BEy">
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>
@@ -451,7 +463,7 @@
                             <constraint firstItem="lpe-1A-Ub3" firstAttribute="leading" secondItem="XLW-e8-a5E" secondAttribute="leading" id="R7f-1l-AKp"/>
                             <constraint firstItem="Dbv-PO-dK9" firstAttribute="top" secondItem="lpe-1A-Ub3" secondAttribute="top" constant="8" id="Sh2-jT-ms5"/>
                             <constraint firstItem="iKQ-3c-jL6" firstAttribute="centerY" secondItem="rfp-P5-wCa" secondAttribute="centerY" id="XeO-s9-5DC"/>
-                            <constraint firstItem="lpe-1A-Ub3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iKQ-3c-jL6" secondAttribute="bottom" constant="32" id="tMB-C9-Tc6"/>
+                            <constraint firstItem="lpe-1A-Ub3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iKQ-3c-jL6" secondAttribute="bottom" constant="16" id="tMB-C9-Tc6"/>
                             <constraint firstItem="lpe-1A-Ub3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iKQ-3c-jL6" secondAttribute="trailing" constant="128" id="zSK-sD-ZKQ">
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>

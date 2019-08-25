@@ -8,7 +8,7 @@ import UIKit
 class GuidePageViewController: UIViewController {
     @IBOutlet weak var guideTitle: UILabel! {
         didSet {
-            guideTitle.text = R.string.localizable.preference_title_quick_guide()
+            guideTitle.text = R.string.localizable.preference_title_quick_guide().uppercased()
             guideTitle.accessibilityIdentifier = "GuidePageGuideTitle"
         }
     }

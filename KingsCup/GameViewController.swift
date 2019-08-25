@@ -12,10 +12,18 @@ import Lottie
 import AVFoundation
 
 class GameViewController: UIViewController {
-    @IBOutlet weak var cardCollectionView: UICollectionView!
+    @IBOutlet weak var cardCollectionView: UICollectionView! {
+        didSet {
+            cardCollectionView.collectionViewLayout = CardFlowLayout()
+        }
+    }
     @IBOutlet weak var cupImageView: UIImageView!
     @IBOutlet weak var crownsStackView: UIStackView!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel! {
+        didSet {
+            statusLabel.text = R.string.localizable.board_title_lets_begin().uppercased()
+        }
+    }
 
     var game: Game!
     var animationUpdate: (() -> Void)?
@@ -38,8 +46,6 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        statusLabel.text = R.string.localizable.board_title_lets_begin().uppercased()
 
         if kingSoundEngine == nil {
             let fileURL = R.file.kingWav()!
@@ -92,8 +98,6 @@ class GameViewController: UIViewController {
                 self.cupImageView.image = UIImage(named: "cup_volume_\(kingsLeft)")
             }, completion: nil)
         }
-
-        cardCollectionView.collectionViewLayout = CardFlowLayout()
     }
 
     override func viewDidAppear(_ animated: Bool) {
