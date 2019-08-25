@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import KingsCupData
 
 class KingsCupUITests: XCTestCase {
     override func setUp() {
@@ -14,38 +15,61 @@ class KingsCupUITests: XCTestCase {
 
         let app = XCUIApplication()
         app.launchArguments.append("UITests")
+        setupSnapshot(app)
         app.launch()
     }
 
-    func testEntireGameFlow() {
+    func testDisplayAllActionsTypes() {
         let app = XCUIApplication()
         app.buttons["MainMenuStartButton"].tap()
 
         let firstCell = app.collectionViews.cells.firstMatch
         let checkedButton = app.buttons["checked"]
 
-        for _ in 1...13 {
+        for actionType in ActionType.allCases {
             firstCell.tap()
+            snapshot("Action Type \(ActionType.allCases.firstIndex(of: actionType)!) - \(actionType.rawValue)")
             checkedButton.tap()
         }
+    }
 
-        let kings = ["K diamonds", "K hearts", "K spades"]
+    func testGameWinScenario() {
+        let app = XCUIApplication()
+        app.buttons["MainMenuStartButton"].tap()
+
+        let checkedButton = app.buttons["checked"]
+
+        let kings = ["K clubs", "K diamonds", "K hearts", "K spades"]
         for king in kings {
             while app.collectionViews.cells.otherElements.containing(.staticText, identifier:king).count == 0 {
-                firstCell.swipeLeft()
+                app.collectionViews.element.swipeLeft()
             }
 
             app.collectionViews.cells.otherElements.containing(.staticText, identifier:king).element.tap()
+
+            // UITests are a bit flaky, sometimes it'll try to tap the checkedButton too soon
+            if !checkedButton.exists {
+                sleep(1)
+            }
+
             checkedButton.tap()
+            snapshot("King \(kings.firstIndex(of: king)! + 1)")
         }
 
+        sleep(1)
+        snapshot("Game Over")
         app.buttons["menu"].tap()
+        snapshot("Game Menu")
     }
 
     func testGuides() {
         let app = XCUIApplication()
         app/*@START_MENU_TOKEN@*/.buttons["MainMenuGuideButton"]/*[[".buttons[\"Kurzanleitung\"]",".buttons[\"MainMenuGuideButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.staticTexts.element(boundBy: 1).swipeLeft()
-        app.staticTexts.element(boundBy: 1).swipeLeft()
+        snapshot("Guide 1")
+        app.staticTexts["GuidePageGuideTitle"].swipeLeft()
+        snapshot("Guide 2")
+        app.staticTexts["GuidePageGuideTitle"].swipeLeft()
+        snapshot("Guide 3")
+        app.buttons.firstMatch.tap()
     }
 }
