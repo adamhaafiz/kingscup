@@ -28,7 +28,13 @@ class KingsCupUITests: XCTestCase {
 
         for actionType in ActionType.allCases {
             firstCell.tap()
-            snapshot("Action Type \(ActionType.allCases.firstIndex(of: actionType)!) - \(actionType.rawValue)")
+            snapshot("Action Type \(ActionType.allCases.firstIndex(of: actionType)! + 1) - \(actionType.rawValue)")
+
+            // UITests are a bit flaky, sometimes it'll try to tap the checkedButton too soon
+            if !checkedButton.exists {
+                sleep(1)
+            }
+
             checkedButton.tap()
         }
     }
@@ -36,6 +42,7 @@ class KingsCupUITests: XCTestCase {
     func testGameWinScenario() {
         let app = XCUIApplication()
         app.buttons["MainMenuStartButton"].tap()
+        snapshot("King 0")
 
         let checkedButton = app.buttons["checked"]
 
@@ -56,8 +63,6 @@ class KingsCupUITests: XCTestCase {
             snapshot("King \(kings.firstIndex(of: king)! + 1)")
         }
 
-        sleep(1)
-        snapshot("Game Over")
         app.buttons["menu"].tap()
         snapshot("Game Menu")
     }
