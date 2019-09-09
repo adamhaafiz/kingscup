@@ -15,7 +15,6 @@ class KingsCupUITests: XCTestCase {
 
         let app = XCUIApplication()
         app.launchArguments.append("UITests")
-        setupSnapshot(app)
         app.launch()
     }
 
@@ -26,9 +25,8 @@ class KingsCupUITests: XCTestCase {
         let firstCell = app.collectionViews.cells.firstMatch
         let checkedButton = app.buttons["checked"]
 
-        for actionType in ActionType.allCases {
+        ActionType.allCases.forEach { _ in
             firstCell.tap()
-            snapshot("Action Type \(ActionType.allCases.firstIndex(of: actionType)! + 1) - \(actionType.rawValue)")
 
             // UITests are a bit flaky, sometimes it'll try to tap the checkedButton too soon
             if !checkedButton.exists {
@@ -42,7 +40,6 @@ class KingsCupUITests: XCTestCase {
     func testGameWinScenario() {
         let app = XCUIApplication()
         app.buttons["MainMenuStartButton"].tap()
-        snapshot("King 0")
 
         let checkedButton = app.buttons["checked"]
 
@@ -60,21 +57,16 @@ class KingsCupUITests: XCTestCase {
             }
 
             checkedButton.tap()
-            snapshot("King \(kings.firstIndex(of: king)! + 1)")
         }
 
         app.buttons["menu"].tap()
-        snapshot("Game Menu")
     }
 
     func testGuides() {
         let app = XCUIApplication()
         app/*@START_MENU_TOKEN@*/.buttons["MainMenuGuideButton"]/*[[".buttons[\"Kurzanleitung\"]",".buttons[\"MainMenuGuideButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        snapshot("Guide 1")
         app.staticTexts["GuidePageGuideTitle"].swipeLeft()
-        snapshot("Guide 2")
         app.staticTexts["GuidePageGuideTitle"].swipeLeft()
-        snapshot("Guide 3")
         app.buttons.firstMatch.tap()
     }
 }

@@ -23,6 +23,10 @@ public struct Game {
 
         if ProcessInfo.processInfo.arguments.contains("UITests") {
             cards = newCards
+        } else if ProcessInfo.processInfo.arguments.contains("Screenshots") {
+            cards = newCards.sorted(by: { (lhs, rhs) -> Bool in
+                lhs.isKing
+            })
         } else {
             cards = newCards.shuffled()
         }

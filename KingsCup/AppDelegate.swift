@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if ProcessInfo.processInfo.arguments.contains("UITests") {
             UIApplication.shared.keyWindow?.layer.speed = Float.greatestFiniteMagnitude
+        } else if ProcessInfo.processInfo.arguments.contains("Screenshots") {
+            UIView.setAnimationsEnabled(false)
         }
 
         return true

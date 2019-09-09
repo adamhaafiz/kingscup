@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A384DA6216A99482798B8F /* libPods-KingsCupScreenshots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9C7D3B439334B8CAE67603 /* libPods-KingsCupScreenshots.a */; };
 		13E500E8E08F25344437E4DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E501CA72D68584E38EB23C /* Game.swift */; };
 		13E5090A3DF475AB46403541 /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50DB06ED20C3A6F80329F /* CardTests.swift */; };
 		13E50B263DE90E1254988B19 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E509AAC8020098D2ABD6D5 /* GuidePageViewController.swift */; };
 		13E50F9986B1C8F4AE60A12D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E50A89DFD151D8C3CCC7F9 /* Card.swift */; };
 		152CA42023098974000BBC2C /* Data+R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CA41F23098974000BBC2C /* Data+R.swift */; };
-		152CA4222309FAC6000BBC2C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */; };
 		153DA09D22F6075000E32241 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DA09C22F6075000E32241 /* GuideViewController.swift */; };
 		155AEAB722FF685E00F6A726 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */; };
 		1560CE1422EF77B900943017 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560CE1322EF77B900943017 /* CardViewController.swift */; };
+		1565BAAB23187482006790F1 /* KingsCupScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1565BAAA23187482006790F1 /* KingsCupScreenshots.swift */; };
+		1565BAB2231874D9006790F1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */; };
 		158ADFA823006806002361CE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158ADFA5230060A3002361CE /* R.generated.swift */; };
 		158ADFC42300A128002361CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBA2300A128002361CE /* Localizable.strings */; };
 		158ADFC52300A128002361CE /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 158ADFBD2300A128002361CE /* confetti.json */; };
@@ -44,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1565BAAD23187482006790F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15D1829A22EDE869002EAC7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D182A122EDE869002EAC7D;
+			remoteInfo = KingsCup;
+		};
 		15D182B722EDE869002EAC7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15D1829A22EDE869002EAC7D /* Project object */;
@@ -102,10 +111,13 @@
 		150B75E723014BA9003A7D6C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		150B75E823014BAF003A7D6C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		152CA41F23098974000BBC2C /* Data+R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+R.swift"; sourceTree = "<group>"; };
-		152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = KingsCupScreenshots/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		153DA09C22F6075000E32241 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		155AEAB622FF685E00F6A726 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1560CE1322EF77B900943017 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1565BAA823187481006790F1 /* KingsCupScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsCupScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1565BAAA23187482006790F1 /* KingsCupScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsCupScreenshots.swift; sourceTree = "<group>"; };
+		1565BAAC23187482006790F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		158ADFA5230060A3002361CE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		158ADFBB2300A128002361CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		158ADFBC2300A128002361CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -142,11 +154,22 @@
 		81004328B1A9580A611BD47D /* libPods-KingsCupUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingsCupUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A81C8C48D5A0363ADCE0B1 /* Pods_KingsCupData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCupData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C1F1500170DA707D4B6577 /* Pods_KingsCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingsCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4BC0878778AE818CC501C8 /* Pods-KingsCupScreenshots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupScreenshots.debug.xcconfig"; path = "Target Support Files/Pods-KingsCupScreenshots/Pods-KingsCupScreenshots.debug.xcconfig"; sourceTree = "<group>"; };
+		D19F14573FC17D7E3088CD7B /* Pods-KingsCupScreenshots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupScreenshots.release.xcconfig"; path = "Target Support Files/Pods-KingsCupScreenshots/Pods-KingsCupScreenshots.release.xcconfig"; sourceTree = "<group>"; };
 		DFDCDDADF6E103A53BCE06CF /* Pods-KingsCupDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupDataTests.release.xcconfig"; path = "Target Support Files/Pods-KingsCupDataTests/Pods-KingsCupDataTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7246FB13CA9E138204D31A7 /* Pods-KingsCupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingsCupUITests.release.xcconfig"; path = "Target Support Files/Pods-KingsCupUITests/Pods-KingsCupUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE9C7D3B439334B8CAE67603 /* libPods-KingsCupScreenshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingsCupScreenshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1565BAA523187481006790F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A384DA6216A99482798B8F /* libPods-KingsCupScreenshots.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15D1829F22EDE869002EAC7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +207,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1565BAA923187482006790F1 /* KingsCupScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */,
+				1565BAAA23187482006790F1 /* KingsCupScreenshots.swift */,
+				1565BAAC23187482006790F1 /* Info.plist */,
+			);
+			path = KingsCupScreenshots;
+			sourceTree = "<group>";
+		};
 		158ADFB92300A128002361CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +240,7 @@
 			children = (
 				15D182A422EDE869002EAC7D /* KingsCup */,
 				15D182B922EDE869002EAC7D /* KingsCupUITests */,
+				1565BAA923187482006790F1 /* KingsCupScreenshots */,
 				15D182CB22EDE894002EAC7D /* KingsCupData */,
 				15D182D822EDE894002EAC7D /* KingsCupDataTests */,
 				15D182A322EDE869002EAC7D /* Products */,
@@ -222,6 +256,7 @@
 				15D182B622EDE869002EAC7D /* KingsCupUITests.xctest */,
 				15D182CA22EDE894002EAC7D /* KingsCupData.framework */,
 				15D182D222EDE894002EAC7D /* KingsCupDataTests.xctest */,
+				1565BAA823187481006790F1 /* KingsCupScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,7 +281,6 @@
 		15D182B922EDE869002EAC7D /* KingsCupUITests */ = {
 			isa = PBXGroup;
 			children = (
-				152CA4212309FAC5000BBC2C /* SnapshotHelper.swift */,
 				15D182BA22EDE869002EAC7D /* KingsCupUITests.swift */,
 				15D182BC22EDE869002EAC7D /* Info.plist */,
 			);
@@ -281,6 +315,7 @@
 				88A81C8C48D5A0363ADCE0B1 /* Pods_KingsCupData.framework */,
 				41B68974B8598DA329C7D8C7 /* Pods_KingsCupDataTests.framework */,
 				81004328B1A9580A611BD47D /* libPods-KingsCupUITests.a */,
+				FE9C7D3B439334B8CAE67603 /* libPods-KingsCupScreenshots.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +331,8 @@
 				DFDCDDADF6E103A53BCE06CF /* Pods-KingsCupDataTests.release.xcconfig */,
 				6B2295955CB569B542088E07 /* Pods-KingsCupUITests.debug.xcconfig */,
 				F7246FB13CA9E138204D31A7 /* Pods-KingsCupUITests.release.xcconfig */,
+				BE4BC0878778AE818CC501C8 /* Pods-KingsCupScreenshots.debug.xcconfig */,
+				D19F14573FC17D7E3088CD7B /* Pods-KingsCupScreenshots.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -314,6 +351,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1565BAA723187481006790F1 /* KingsCupScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1565BAB123187482006790F1 /* Build configuration list for PBXNativeTarget "KingsCupScreenshots" */;
+			buildPhases = (
+				0001B0169D18DD9FA2C9FBFE /* [CP] Check Pods Manifest.lock */,
+				1565BAA423187481006790F1 /* Sources */,
+				1565BAA523187481006790F1 /* Frameworks */,
+				1565BAA623187481006790F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1565BAAE23187482006790F1 /* PBXTargetDependency */,
+			);
+			name = KingsCupScreenshots;
+			productName = KingsCupScreenshots;
+			productReference = 1565BAA823187481006790F1 /* KingsCupScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		15D182A122EDE869002EAC7D /* KingsCup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182BF22EDE869002EAC7D /* Build configuration list for PBXNativeTarget "KingsCup" */;
@@ -400,10 +456,14 @@
 		15D1829A22EDE869002EAC7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Adam Haafiz";
 				TargetAttributes = {
+					1565BAA723187481006790F1 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 15D182A122EDE869002EAC7D;
+					};
 					15D182A122EDE869002EAC7D = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -443,6 +503,7 @@
 			targets = (
 				15D182A122EDE869002EAC7D /* KingsCup */,
 				15D182B522EDE869002EAC7D /* KingsCupUITests */,
+				1565BAA723187481006790F1 /* KingsCupScreenshots */,
 				15D182C922EDE894002EAC7D /* KingsCupData */,
 				15D182D122EDE894002EAC7D /* KingsCupDataTests */,
 			);
@@ -450,6 +511,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1565BAA623187481006790F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15D182A022EDE869002EAC7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +560,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0001B0169D18DD9FA2C9FBFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingsCupScreenshots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		158ADFA423005FE5002361CE /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,7 +596,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -620,6 +710,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1565BAA423187481006790F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1565BAAB23187482006790F1 /* KingsCupScreenshots.swift in Sources */,
+				1565BAB2231874D9006790F1 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15D1829E22EDE869002EAC7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -641,7 +740,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D182BB22EDE869002EAC7D /* KingsCupUITests.swift in Sources */,
-				152CA4222309FAC6000BBC2C /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +764,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1565BAAE23187482006790F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15D182A122EDE869002EAC7D /* KingsCup */;
+			targetProxy = 1565BAAD23187482006790F1 /* PBXContainerItemProxy */;
+		};
 		15D182B822EDE869002EAC7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 15D182A122EDE869002EAC7D /* KingsCup */;
@@ -725,6 +828,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1565BAAF23187482006790F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4BC0878778AE818CC501C8 /* Pods-KingsCupScreenshots.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59LE6JR5WB;
+				INFOPLIST_FILE = KingsCupScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamhaafiz.KingsCupScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KingsCup;
+			};
+			name = Debug;
+		};
+		1565BAB023187482006790F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19F14573FC17D7E3088CD7B /* Pods-KingsCupScreenshots.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59LE6JR5WB;
+				INFOPLIST_FILE = KingsCupScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamhaafiz.KingsCupScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KingsCup;
+			};
+			name = Release;
+		};
 		15D182BD22EDE869002EAC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1031,6 +1176,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1565BAB123187482006790F1 /* Build configuration list for PBXNativeTarget "KingsCupScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1565BAAF23187482006790F1 /* Debug */,
+				1565BAB023187482006790F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		15D1829D22EDE869002EAC7D /* Build configuration list for PBXProject "KingsCup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
