@@ -10,11 +10,10 @@ import XCTest
 @testable import KingsCupData
 
 class GameTests: XCTestCase {
-    var sut: Game = Game()
+    var sut: GameEngine = GameEngine()
 
     override func setUp() {
         super.setUp()
-        sut.build()
     }
 
     func testGame_build_shouldInitFullDeck() {

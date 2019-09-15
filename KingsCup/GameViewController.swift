@@ -9,7 +9,6 @@
 import UIKit
 import KingsCupData
 import Lottie
-import AVFoundation
 
 class GameViewController: UIViewController {
     @IBOutlet weak var cardCollectionView: UICollectionView! {
@@ -25,13 +24,10 @@ class GameViewController: UIViewController {
         }
     }
 
-    var game: Game!
-    var animationUpdate: (() -> Void)?
+    var queuedAnimation: (() -> Void)?
 
-    var flipSoundEngine: AVAudioPlayer?
-    var whooshSoundEngine: AVAudioPlayer?
-    var gameOverSoundEngine: AVAudioPlayer?
-    var kingSoundEngine: AVAudioPlayer?
+    var game: GameEngine = GameEngine()
+    var soundEngine = SoundEngine()
 
     let taunts = [R.string.localizable.taunt_one(),
                   R.string.localizable.taunt_two(),
@@ -46,22 +42,10 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        soundEngine.play(sound: .gameStarted)
 
-        if kingSoundEngine == nil {
-            let fileURL = R.file.kingWav()!
-            kingSoundEngine = try! AVAudioPlayer(contentsOf: fileURL)
-        }
-
-        kingSoundEngine!.play()
-
-        game = Game()
-        game.build()
-        game.gameOverClosure = { [weak self] game in
-            debugPrint("Game Over! \(game.numberOfKings()) \(game.cards.count)")
-
-            guard let self = self else {
-                return
-            }
+        game.gameOverClosure = { [weak self] _ in
+            guard let self = self else { return }
 
             let animationView = AnimationView(name: "confetti")
             self.view.addSubview(animationView)
@@ -74,17 +58,10 @@ class GameViewController: UIViewController {
                 animationView.widthAnchor.constraint(equalTo: self.view.widthAnchor)])
             animationView.play()
 
-            if self.gameOverSoundEngine == nil {
-                let fileURL = R.file.game_overWav()!
-                self.gameOverSoundEngine = try! AVAudioPlayer(contentsOf: fileURL)
-            }
-
-            self.gameOverSoundEngine!.play()
+            self.soundEngine.play(sound: .gameEnded)
         }
         game.kingsNumberChangedClosure = { [weak self] kingsLeft in
-            guard let self = self else {
-                return
-            }
+            guard let self = self else { return }
 
             let feedbackGenerator = UIImpactFeedbackGenerator()
             feedbackGenerator.impactOccurred()
@@ -103,9 +80,9 @@ class GameViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        if let animationUpdate = animationUpdate {
-            animationUpdate()
-            self.animationUpdate = nil
+        if let queuedAnimation = queuedAnimation {
+            queuedAnimation()
+            self.queuedAnimation = nil
         }
     }
 
@@ -115,21 +92,18 @@ class GameViewController: UIViewController {
             return
         }
 
-        if self.whooshSoundEngine == nil {
-            let fileURL = R.file.whooshWav()!
-            self.whooshSoundEngine = try! AVAudioPlayer(contentsOf: fileURL)
-        }
+        soundEngine.play(sound: .cardDismissed)
 
-        self.whooshSoundEngine!.play()
+        queuedAnimation = { [weak self] in
+            guard let self = self else { return }
 
-        animationUpdate = { [weak self] in
-            let index = self?.game.cards.firstIndex(of: cardToBeRemoved)!
-            self?.game.remove(card: cardToBeRemoved)
-            self?.cardCollectionView.performBatchUpdates({
-                self?.cardCollectionView.deleteItems(at: [IndexPath(item: index!, section: 0)])
+            let index = self.game.cards.firstIndex(of: cardToBeRemoved)!
+            self.game.remove(card: cardToBeRemoved)
+            self.cardCollectionView.performBatchUpdates({
+                self.cardCollectionView.deleteItems(at: [IndexPath(item: index, section: 0)])
             }, completion: nil)
 
-            self?.statusLabel.text = self?.game.numberOfKings() ?? 0 > 0 ? self?.taunts.randomElement()?
+            self.statusLabel.text = self.game.numberOfKings() > 0 ? self.taunts.randomElement()?
                     .uppercased() : R.string.localizable.game_over_body().uppercased()
         }
     }
@@ -173,16 +147,9 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
 
         _ = cardViewController.view
-
         cardViewController.card = game.cards[indexPath.item]
 
-        if flipSoundEngine == nil {
-            let fileURL = R.file.flipWav()!
-            flipSoundEngine = try! AVAudioPlayer(contentsOf: fileURL)
-        }
-
-        flipSoundEngine!.play()
-
+        soundEngine.play(sound: .cardOpened)
         present(cardViewController, animated: true)
     }
 }

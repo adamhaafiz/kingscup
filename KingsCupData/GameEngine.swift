@@ -3,13 +3,13 @@
 // Copyright (c) 2019 Adam Haafiz. All rights reserved.
 //
 
-public struct Game {
-    public var cards: [Card]
-    public var gameOverClosure: ((Game) -> Void)?
+public struct GameEngine {
+    public var cards: [Card] = []
+    public var gameOverClosure: ((GameEngine) -> Void)?
     public var kingsNumberChangedClosure: ((Int) -> Void)?
 
     public init() {
-        cards = []
+        build()
     }
 
     mutating public func build() {

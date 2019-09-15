@@ -146,7 +146,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALE-TU-pK0">
                                 <rect key="frame" x="130" y="593" width="418.5" height="247.5"/>
-                                <mutableString key="text">Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup. Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup.</mutableString>
+                                <string key="text">Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup. Yes, this is a drinking game. Doesn't have to be alcoholic.  Everyone must have their own drinking cup. Place another cup in the middle to be the King's Cup.</string>
                                 <fontDescription key="fontDescription" name="LeagueSpartan-Bold" family="League Spartan" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
