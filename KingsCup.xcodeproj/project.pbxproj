@@ -335,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D182BF22EDE869002EAC7D /* Build configuration list for PBXNativeTarget "KingsCup" */;
 			buildPhases = (
+				15BCA8BF239C4B1400C9139F /* R.swfit */,
 				15D1829E22EDE869002EAC7D /* Sources */,
 				15D1829F22EDE869002EAC7D /* Frameworks */,
 				15D182A022EDE869002EAC7D /* Resources */,
@@ -521,6 +522,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15BCA8BF239C4B1400C9139F /* R.swfit */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swfit;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1565BAA423187481006790F1 /* Sources */ = {
